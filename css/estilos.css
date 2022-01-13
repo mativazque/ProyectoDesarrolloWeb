@@ -1,0 +1,828 @@
+
+/* General */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 19px;
+    font-weight:normal
+}
+
+/* HEADER Y NAV */
+
+.headerGeneral{
+    height: 70px;
+    background-color: #474747;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+
+.headerGeneral nav{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+#contenedorImgNav{
+    height: 100%;
+    width:23%;
+    text-align: center;
+}
+
+#contenedorImgNav img{
+    position: relative;
+    top: 10px;
+}
+
+#contenedorRellenoNav{
+    height: 100%;
+    width:23%;
+}
+
+.headerGeneral nav ul{
+    display: flex;
+    width: 54%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.headerGeneral nav ul li{
+    height: 100%;
+    list-style: none;
+    overflow: hidden;
+}
+
+.headerGeneral nav ul li a{
+    height: 100%;
+    text-decoration: none;
+    color: #ffff;
+    height: 100%;
+    display: block;
+    padding-top: 23px;
+}
+
+#margenNavegadorIzquierdo{
+    margin-left: 20px;
+}
+
+#margenNavegadorDerecho{
+    margin-right: 20px;
+}
+
+header nav ul li a:hover{
+    background-color: rgba(0, 0, 0, 0.192);
+}
+
+/*
+header nav ul{
+    height: 70px;
+    background-color: #474747;
+    text-align: center;
+    list-style: none;
+}
+
+
+header nav ul li{
+    display: inline-block;
+    height: 100%;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+header nav ul li a{
+    color:#ffff;
+    text-decoration:none;
+    height: 48px;
+    padding-top: 22px;
+    display: block;
+}
+
+
+header nav ul li a:hover{
+    background-color: rgba(0, 0, 0, 0.192);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+*/
+
+/* MAIN */
+
+main{
+    min-height: 100vh;  
+}
+
+/* Index */
+
+/* Index - Portada */
+
+.fondoPortadaindex{
+    height: 100vh;
+    background-color: #242424;
+    text-align: center;
+    color: #ffff;
+}
+
+
+.fondoPortadaindex img{
+    height: 130px;
+    position: relative;
+    top:35%;  
+}
+
+/* Index - Sobre Nosotros */
+
+.introduccionIndex{
+    height: 100vh;
+    background-color: #590004;
+    color: white;
+}
+
+.sobreNosotrosTitulo{
+   font-size: 50px;
+   font-weight: bold;
+   display: inline-block;
+   position: relative;
+   top: 120px;
+   left: 150px;
+}
+
+.sobreNosotrosParrafo{
+    width: 70vw;
+    height: 40%;
+    position: relative;
+    top: 150px;
+    left: 150px;   
+}
+
+.sobreNosotrosParrafo p{
+    font-size: 38px;
+    line-height: 150%;
+    padding-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+/* Servicios */
+
+/* Servicios - Principal */
+
+.contenedorPrincipalIntroduccion{
+    height: 100vh;
+    background-color: #7F0104;
+    color: #ffff;
+}
+
+.tituloServicios{
+    font-size: 50px;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    top: 120px;
+    left: 150px; 
+}
+
+.contenedorParrafoServicios{
+    width: 80%;
+    height: 70%;
+    position: relative;
+    top: 150px;
+    left: 150px;
+}
+
+.estiloParrafoServicios{
+    font-size: 38px;
+    line-height: 150%;
+    padding-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px; 
+}
+
+/* Servicios - Lista de servicios */
+
+.contenedorDetalleServicios{
+    height: 100vh;
+    background-color: #593D3E;
+    color: #ffff;
+    position: relative;
+}
+
+.contenedorHijoDetalleServicios{
+height: 100%;
+width: 50%;
+display: inline-block;
+position: relative;
+}
+
+.contenedorPorTipoServicio{
+    height: 20%;
+    width: 80%;
+    display: inline-block;
+    position: relative;
+    top: 10%;
+    left: 10%;
+}
+
+
+
+.estiloTituloDetalleServicios{
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+/* Servicios - Imagenes */
+
+.contenedorImgServicios{
+    display: inline-block;
+    position: absolute;
+    top: 200px;
+    z-index: 2;
+}
+
+#contenedorDecorativoServicios{
+    position: absolute;
+    right: 70px;
+    top: 140px;
+    background-color: #1D5064;
+    display: inline-block;
+    height: 30%;
+    width: 30%;
+    border: solid 1px #ffff;
+}
+
+/* Equipo */
+
+/* Equipo - Introduccion */
+
+.contenedorPrincipalIntroduccionEquipo{
+    height: 100vh;
+    background-color: #204B57;
+    color: #ffff;
+    position: relative;
+}
+
+.tituloIntroduccionEquipo{
+    font-size: 50px;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    left: 40%;
+}
+
+.parrafoIntroduccionEquipo{
+    position: relative;
+    width: 80%;
+    height: 20%;
+    top: 50px;
+    left: 150px;
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    line-height: 150%;
+}
+
+#imagenPortadaEquipo{
+    position: absolute;
+    top: 280px;
+    left: 30%;
+}
+
+/* Equipo - Principal */
+
+.contenedorSociosEquipo{
+    height: 100vh;
+    background-color: #ffff;
+    color: #ffff;
+    position: relative;
+}
+
+.contenedorHijoEquipo{
+    height: 100vh;
+    width: 60%;
+    background-color:#590004;
+    color: #ffff;
+    position: relative;
+}
+
+/* Contenedores de texto Socios */
+
+#seccionSocio{
+    height: 40%;
+    width: 65%;
+    display: inline-block;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+#seccionSocia{
+    height: 40%;
+    width: 65%;
+    display: inline-block;
+    position: relative;
+    top: 120px;
+    left: 50px;
+}
+
+/* Estilo de texto Socios */
+
+.estiloTituloSocio{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.estiloSubTituloSocio{
+    font-weight: lighter;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.estiloParrafoSocio{
+    margin-bottom: 20px;
+}
+
+.estiloDatosSocios{
+    display: inline-block;
+}
+
+
+/* Imagenes socios */
+
+#socio{
+    position: absolute;
+    top: 25px;
+    right: 400px;
+    height: 320px;
+    border: solid black 2px;
+}
+
+#socia{
+    position: absolute;
+    bottom: 25px;
+    right: 400px;
+    height: 320px;
+    border: solid black 2px;
+    }
+
+/* Trabajá con nosotros */ 
+
+/* Trabajá con nosotros - Introducción */
+
+#contenedorIntoduccionTrabaja{
+    height: 30vh;
+    background-color: #051923;
+    color: #ffff;
+    text-align: center;
+}
+
+.estiloTituloTrabaja{
+font-size: 50px;
+font-weight: bold;
+position: relative;
+top: 30%;
+}
+
+/* Trabajá con nosotros - LLamados */
+
+#contenedorLLamados{
+    background-color: #ffff;
+    height: 60vh;
+    position: relative;
+}
+
+#contenedorHijoLlamados{
+    width: 45%;
+    height: 100%;
+    background-color: #ffff;
+    display: inline-block;  
+}
+
+#seccionLlamadoEstudiante{
+    height: 30%;
+    width: 60%;
+    background-color: #eee7e3;
+    position: relative;
+    top: 45px;
+    left: 80px;
+    border: solid black 3px;
+}
+
+#seccionLlamadoContador{
+    height: 30%;
+    width: 60%;
+    background-color: #eee7e3;
+    position: relative;
+    top: 90px;
+    left: 80px;
+    border: solid black 3px;
+}
+
+#estiloTituloLLamadosAbiertos{
+    font-size: 34px;
+    display: inline-block;
+    position: relative;
+    top: 15px;
+    left: 80px;
+    font-weight: bold;
+}
+
+.linkLlamados{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.estiloParrafoLlamados{
+    padding-top: 30px;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.contenedorTituloLLamado{
+    height: 40px;
+    position: relative;
+    top: 10px;
+}
+
+#imgLlamados{
+    position: absolute;
+    top: 25px;
+    left: 600px;
+    height: 380px;
+    z-index: 2;
+    border: solid 3px #ffff;
+}
+
+#contenedorDecorativoLLamados{
+    height: 100%;
+    width: 50%;
+    background-color: #003554;
+    position:absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Trabajá con nosotros - Por qué trabajar en V & A */
+
+#contenedorCulturaOrganizacion{
+    height: 40vh;
+    background-color: #7A3E43;
+    color: #ffff;
+}
+
+#contenedorHijoCulturaOrganizacion{
+    height: 70%;
+    width: 60%;
+    background-color: #55262a;
+    color: #ffff;
+    position: relative;
+    left: 20%;
+    top: 16%;
+}
+
+#contenedorHijoCulturaOrganizacion h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+#contenedorHijoCulturaOrganizacion p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Llamados */
+
+#contenedorPadreLlamadosAbiertos{
+    height: 70vh;
+    background-color: #1D5064;
+}
+
+#contenedorHijoLLamadosAbiertos{
+    height: 70vh;
+    background-color: #C2B8B2;
+    width: 70%;
+    color: black;
+}
+
+#contenedorHijoLLamadosAbiertos h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+#contenedorHijoLLamadosAbiertos h3 u{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#contenedorHijoLLamadosAbiertos h3{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+.estiloParrafoLlamado{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#contenedorPrincipalFormularioLLamados{
+    background-color: #250001;
+    position: relative;
+}
+
+#contenedorPrincipalFormularioLLamados h3{
+    color: #ffff;
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+#contenedorEspecificoFormulario{
+    height: 70vh;
+    width: 50%;
+}
+
+.itemsFormularioLlamados{
+    display: inline-block;
+    background-color: #e7dcd5;
+    color: black;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#imagenFormularioLlamados{
+    position: absolute;
+    top: 12%;
+    right: 8%;
+    border: 2px solid #ffff;
+}
+
+/* Contacto */
+
+#contenedorPrincipalContacto h2{
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    margin-left: 40px;
+    padding-top: 40px;
+
+
+}
+
+
+#contenedorPrincipalContacto{
+background-color: #1D5064;
+height: 120vh;
+position: relative;
+color: #ffff;
+}
+
+
+
+#contenedorHijoContacto{
+    height:70%;
+    width: 50%;
+    position: relative;
+    top: 6%;
+    display: inline-block;
+}
+
+.estiloCamposFormulario{
+    display: block;
+    margin-top: 2px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+.estiloLabelFormulario{
+    margin-left: 40px;    
+}
+
+#imgContacto{
+    position: absolute;
+    top: 163px;
+    right: 70px;
+}
+
+#sectionOtrosDatosContacto{
+    height: 30vh;
+    width: 20%;
+    display: inline-block;
+    margin-left: 820px;
+    position: absolute;
+    top: 600px;
+    right: 390px;
+
+}
+
+#sectionOtrosDatosContacto ul li{
+    list-style: none;
+}
+
+#sectionOtrosDatosContacto ul li a{
+    text-decoration: none;
+    color: #ffff;
+}
+
+
+/* FOOTER */
+
+footer{
+    height: 300px;
+    background-color: #051923;
+}
+
+#contenedorPadreFooter{
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+    background-color: rgb(39, 35, 35);
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#contenedorMenuFooter{
+    width: 250px;
+    height: 210px;
+}
+
+#contenedorRedesFooter{
+    width: 250px;
+    height: 210px;
+}
+
+#contenedorContactoFooter{
+    width: 250px;
+    height: 210px;
+}
+
+#contenedorLegalFooter{
+    width: 250px;
+    height: 210px;
+}
+
+#contenedorCopyrightFooter{
+    height: 50px;
+    text-align: center;
+    background-color: black;
+    color: #ffff;
+}
+
+#contenedorHijoCopy{
+    position: relative;
+    top: 15px;
+    font-size: 15px;
+}
+
+.titulosSeccionesFooter{
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #ffff;
+}
+
+.estiloTextoFooter{
+    font-size: 14px;
+    line-height: 200%;
+    color: #ffff;
+    list-style: none;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.estiloListasFooter{
+    list-style: none;
+}
+
+#contenedorPadreFooter div ul li a{
+    font-weight: bold;
+}
+
+
+#contenedorListaRedes{
+    display: flex;
+    width: 90%;
+    height: 25%;
+    margin-left: 10px;
+}
+
+
+.listaRedesFooter{
+    list-style: none;
+    height: 30px;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+
+.imgRedes{
+    height: 30px;
+}
+
+.estiloIconosContacto{
+    height: 20px;
+    margin-right: 5px;
+}
+
+#estiloIconosMailContacto{
+    width: 20px;
+    height: 15px;
+    margin-right: 5px;
+
+}
+
+
+
+
+
+
+
+
+/* ANULADO 
+
+footer{
+    background-color: #474747;
+    height: 27vh;
+}
+
+
+
+/* Redes sociales */
+
+
+/*
+
+.principalFooter{
+    height: 80%;
+    width: 100%;
+    text-align: center;
+}
+
+
+.principalFooter h4{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+}
+
+.principalFooter ul{
+    display: inline-block;
+}
+
+.principalFooter ul li{
+    display: inline-block;
+}
+
+.imgRedes{
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.imgRedes:hover{
+    filter: opacity(50%);
+
+}
+
+/* Copyright */
+
+/*
+.pieFooter{
+    height: 20%;
+    background-color: #242424;
+    position: relative;
+}
+
+.pieFooter h4{
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    font-size: 16px;
+    color: #ffff;
+   
+}
+
+*/
+
+
