@@ -75,42 +75,7 @@ header nav ul li a:hover{
     background-color: rgba(0, 0, 0, 0.192);
 }
 
-/*
-header nav ul{
-    height: 70px;
-    background-color: #474747;
-    text-align: center;
-    list-style: none;
-}
 
-
-header nav ul li{
-    display: inline-block;
-    height: 100%;
-    margin-left: 12px;
-    margin-right: 12px;
-}
-
-header nav ul li a{
-    color:#ffff;
-    text-decoration:none;
-    height: 48px;
-    padding-top: 22px;
-    display: block;
-}
-
-
-header nav ul li a:hover{
-    background-color: rgba(0, 0, 0, 0.192);
-}
-
-header {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
-*/
 
 /* MAIN */
 
@@ -750,79 +715,4 @@ footer{
     margin-right: 5px;
 
 }
-
-
-
-
-
-
-
-
-/* ANULADO 
-
-footer{
-    background-color: #474747;
-    height: 27vh;
-}
-
-
-
-/* Redes sociales */
-
-
-/*
-
-.principalFooter{
-    height: 80%;
-    width: 100%;
-    text-align: center;
-}
-
-
-.principalFooter h4{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    color: white;
-}
-
-.principalFooter ul{
-    display: inline-block;
-}
-
-.principalFooter ul li{
-    display: inline-block;
-}
-
-.imgRedes{
-    height: 50px;
-    width: 50px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.imgRedes:hover{
-    filter: opacity(50%);
-
-}
-
-/* Copyright */
-
-/*
-.pieFooter{
-    height: 20%;
-    background-color: #242424;
-    position: relative;
-}
-
-.pieFooter h4{
-    position: absolute;
-    top: 18px;
-    right: 20px;
-    font-size: 16px;
-    color: #ffff;
-   
-}
-
-*/
-
 
