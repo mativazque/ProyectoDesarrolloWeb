@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,37 +9,49 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&family=Roboto&family=Roboto+Condensed&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
-   <!--navegador-->
-   <header class="headerGeneral">
-    <nav>
-        <div id="contenedorImgNav">
-            <a href="../index.html">
+    <!--navegador-->
+    <nav class="navbar fixed-top navbar-expand-md bg-ligh navbar-dark" style="background-color: #474747;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
                 <img src="../img/logo_en_blanco.png" alt="logo">
             </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Quienes somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="equipo.html">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trabaja con nosotros.html">Trabajá con nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <ul>
-            <li id="margenNavegadorIzquierdo">
-                <a href="../index.html">Quienes somos</a>
-            </li>
-            <li>
-                <a href="servicios.html">Servicios</a>
-            </li>
-            <li>
-                <a href="equipo.html">Equipo</a>
-            </li>
-            <li>
-                <a href="trabaja con nosotros.html">Trabajá con nosotros</a>
-            </li>
-            <li id="margenNavegadorDerecho">
-                <a href="contacto.html">Contacto</a>
-            </li>
-        </ul>
-        <div id="contenedorRellenoNav"></div>
     </nav>
-</header>
+
     <main>
         <div id="contenedorPrincipalContacto">
             <!--Formulario-->
@@ -46,17 +59,21 @@
             <section id="contenedorHijoContacto">
                 <form action="">
                     <label for="nombre usuario" class="estiloLabelFormulario">Nombre</label>
-                    <input type="text" placeholder="Ingrese su nombre" id="nombre usuario" required class="estiloCamposFormulario">
+                    <input type="text" placeholder="Ingrese su nombre" id="nombre usuario" required
+                        class="estiloCamposFormulario">
                     <label for="email usuario" class="estiloLabelFormulario">E-mail</label>
-                    <input type="email" placeholder="Ingrese su e-mail" id="email usuario" required class="estiloCamposFormulario">
-                    <label for="telefono usuario" class="estiloLabelFormulario">Celular o teléfono</label>
-                    <input type="tel" placeholder="Ingrese su celular o teléfono" id="telefono usuario"  required class="estiloCamposFormulario">
+                    <input type="email" placeholder="Ingrese su e-mail" id="email usuario" required
+                        class="estiloCamposFormulario">
+                    <label for="telefono usuario" class="estiloLabelFormulario">Celular o teléfono.</label>
+                    <input type="tel" placeholder="Ingrese su celular o tel." id="telefono usuario" required
+                        class="estiloCamposFormulario">
                     <label for="mensaje usuario" class="estiloLabelFormulario">Mensaje</label>
-                    <textarea name="" id="mensaje usuario" cols="70" rows="10" placeholder="Ingrese su mensaje" required class="estiloCamposFormulario"></textarea>            
-                    <input type="submit" value="Enviar mensaje" class="estiloCamposFormulario">
+                    <textarea name="" id="mensaje usuario" cols="70" rows="10" placeholder="Ingrese su mensaje" required
+                        class="estiloCamposFormulario"></textarea>
+                    <input type="submit" value="Enviar mensaje" class="btn btn-dark">
                 </form>
             </section>
-            <!--Otros datos--> 
+            <!--Otros datos-->
             <section id="sectionOtrosDatosContacto">
                 <h3>Montevideo, Uruguay</h3>
                 <ul>
@@ -67,7 +84,7 @@
                     <li>cel (Aún sin definir)</li>
                 </ul>
             </section>
-            <img src="../img/edificio.jpg" alt="Edificio" id="imgContacto">   
+            <img src="../img/edificio.jpg" alt="Edificio" id="imgContacto">
         </div>
     </main>
     <footer>
@@ -96,34 +113,34 @@
 
             <div id="contenedorRedesFooter">
                 <h4 class="titulosSeccionesFooter">V&A EN REDES</h4>
-                    <ul id="contenedorListaRedes">
-                        <li class="listaRedesFooter">
-                            <a href="https://twitter.com/">
-                                <img src="../img/twitter.png" alt="Twitter" class="imgRedes">
-                            </a>
-                        </li>
-                        <li class="listaRedesFooter">
-                            <a href="https://instagram.com/">
-                                <img src="../img/instagram.png" alt="Instagram" class="imgRedes">
-                            </a>
-                        </li>
-                        <li class="listaRedesFooter">
-                            <a href="https://Facebook.com/">
-                                <img src="../img/facebook.png" alt="Facebook" class="imgRedes">
-                            </a>
-                        </li>
-                        <li class="listaRedesFooter">
-                            <a href="https://linkedin.com/">
-                                <img src="../img/Linkedin.png" alt="Linkedin" class="imgRedes">
-                            </a>
-                        </li>
-                        <li class="listaRedesFooter">
-                            <a href="https://whatsapp.com/">
-                                <img src="../img/whatsapp.png" alt="whatsapp" class="imgRedes">
-        
-                            </a>
-                        </li>
-                    </ul>
+                <ul id="contenedorListaRedes">
+                    <li class="listaRedesFooter">
+                        <a href="https://twitter.com/">
+                            <img src="../img/twitter.png" alt="Twitter" class="imgRedes">
+                        </a>
+                    </li>
+                    <li class="listaRedesFooter">
+                        <a href="https://instagram.com/">
+                            <img src="../img/instagram.png" alt="Instagram" class="imgRedes">
+                        </a>
+                    </li>
+                    <li class="listaRedesFooter">
+                        <a href="https://Facebook.com/">
+                            <img src="../img/facebook.png" alt="Facebook" class="imgRedes">
+                        </a>
+                    </li>
+                    <li class="listaRedesFooter">
+                        <a href="https://linkedin.com/">
+                            <img src="../img/Linkedin.png" alt="Linkedin" class="imgRedes">
+                        </a>
+                    </li>
+                    <li class="listaRedesFooter">
+                        <a href="https://whatsapp.com/">
+                            <img src="../img/whatsapp.png" alt="whatsapp" class="imgRedes">
+
+                        </a>
+                    </li>
+                </ul>
             </div>
 
             <div id="contenedorContactoFooter">
@@ -131,10 +148,12 @@
                 <ul>
                     <li class="estiloTextoFooter">Montevideo, Uruguay</li>
                     <li class="estiloTextoFooter">
-                        <img src="../img/icono_ubicacion.png" alt="ubicacionContacto" class="estiloIconosContacto" >Coronel Brandzen 2007, apto 401.
+                        <img src="../img/icono_ubicacion.png" alt="ubicacionContacto"
+                            class="estiloIconosContacto">Coronel Brandzen 2007, apto 401.
                     </li>
                     <li class="estiloTextoFooter">
-                        <img src="../img/icono_mail.png" alt="mailContacto" id="estiloIconosMailContacto">  matiasvaz95@gmail.com
+                        <img src="../img/icono_mail.png" alt="mailContacto" id="estiloIconosMailContacto">
+                        matiasvaz95@gmail.com
                     </li>
                     <li class="estiloTextoFooter">
                         <img src="../img/icono_cel.png" alt="celContacto" class="estiloIconosContacto">+598 98 36 00 17
@@ -156,8 +175,8 @@
                     </li>
                     <li class="estiloListasFooter">
                         <a href="../index.html" class="estiloTextoFooter">Información de Copyright</a>
-                    </li>                    
-                </ul>               
+                    </li>
+                </ul>
             </div>
         </div>
         <div id="contenedorCopyrightFooter">
@@ -165,4 +184,5 @@
         </div>
     </footer>
 </body>
+
 </html>

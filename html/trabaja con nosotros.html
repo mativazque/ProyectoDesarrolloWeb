@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,66 +9,59 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&family=Roboto&family=Roboto+Condensed&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
-     <!--navegador-->
-     <header class="headerGeneral">
-        <nav>
-            <div id="contenedorImgNav">
-                <a href="../index.html">
-                    <img src="../img/logo_en_blanco.png" alt="logo">
-                </a>
+    <!--navegador-->
+    <nav class="navbar fixed-top navbar-expand-md bg-ligh navbar-dark" style="background-color: #474747;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo_en_blanco.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Quienes somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="equipo.html">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trabaja con nosotros.html">Trabajá con nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
             </div>
-            <ul>
-                <li id="margenNavegadorIzquierdo">
-                    <a href="../index.html">Quienes somos</a>
-                </li>
-                <li>
-                    <a href="servicios.html">Servicios</a>
-                </li>
-                <li>
-                    <a href="equipo.html">Equipo</a>
-                </li>
-                <li>
-                    <a href="trabaja con nosotros.html">Trabajá con nosotros</a>
-                </li>
-                <li id="margenNavegadorDerecho">
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-            <div id="contenedorRellenoNav"></div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+
     <main>
         <!--Inicio Título + Imagen de fondo-->
         <div id="contenedorIntoduccionTrabaja">
             <h1 class="estiloTituloTrabaja">Trabajá con nosotros</h1>
         </div>
         <!--Fin Título + Imagen de fondo-->
-        <!--LLamados-->
-        <div id="contenedorLLamados">
-            <div id="contenedorHijoLlamados">
-                <h2 id="estiloTituloLLamadosAbiertos">LLamados abiertos</h2>
-                <section id="seccionLlamadoEstudiante">
-                    <h3 class="contenedorTituloLLamado">
-                        <a href="estudiantesccee.html" class="linkLlamados">Estudiantes CCEE</a>
-                    </h3>
-                    <p class="estiloParrafoLlamados">Breve descripción del llamado.</p>
-                </section>
-                <section id="seccionLlamadoContador">    
-                    <h3 class="contenedorTituloLLamado">
-                        <a href="contadorjunior.html" class="linkLlamados">Contador Público Junior</a>
-                    </h3>
-                    <p class="estiloParrafoLlamados">Breve descripción del llamado.</p>
-                </section>
-            </div>
-            <img src="../img/equipo.jpg" alt="" id="imgLlamados">
-            <div id="contenedorDecorativoLLamados"></div>
-        </div>
+
         <!--Cultura de empleados-->
-        <div id="contenedorCulturaOrganizacion">  
-            <div id="contenedorHijoCulturaOrganizacion">   
+        <div id="contenedorCulturaOrganizacion">
+            <div id="contenedorHijoCulturaOrganizacion">
                 <h2>¿Por qué trabajar en Vazquez & Asociados?</h2><br>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
                     nesciunt sint, eaque explicabo saepe suscipit rerum exercitationem,
@@ -78,6 +72,35 @@
             </div>
         </div>
         <!--Fin cultura de empleados-->
+
+        <!--LLamados-->
+        <div id="contenedorLLamados">
+            <h2 id="estiloTituloLLamadosAbiertos">LLamados abiertos</h2>
+            <div class="row mt-4" style="justify-content: space-around;">
+                <div class="col-sm-5">
+                    <div class="card ">
+                        <div class="card-body">
+                            <h5 class="card-title">Estudiantes Contador Público</h5>
+                            <p class="card-text">Buscamos estudiantes de Contador Público cursando el segundo o tercer año de carrera.</p>
+                            <a href="estudiantesccee.html" class="btn btn-secondary">Postularme</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Contador Público Junior</h5>
+                            <p class="card-text">Buscamos Contadores Públicos recientemente recibidos con el menos 2 años de experiencia.</p>
+                            <a href="contadorjunior.html" class="btn btn-secondary">Postularme</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="../img/equipo.jpg" alt="" id="imgLlamados">
+        </div>
+
+
+
     </main>
     <footer>
         <div id="contenedorPadreFooter">
@@ -105,34 +128,34 @@
 
             <div id="contenedorRedesFooter">
                 <h4 class="titulosSeccionesFooter">V&A EN REDES</h4>
-                    <ul id="contenedorListaRedes">
-                        <li class="listaRedesFooter">
-                            <a href="https://twitter.com/">
-                                <img src="../img/twitter.png" alt="Twitter" class="imgRedes">
-                            </a>
-                        </li>
-                        <li class="listaRedesFooter">
-                            <a href="https://instagram.com/">
-                                <img src="../img/instagram.png" alt="Instagram" class="imgRedes">
-                            </a>
-                        </li>
-                        <li class="listaRedesFooter">
-                            <a href="https://Facebook.com/">
-                                <img src="../img/facebook.png" alt="Facebook" class="imgRedes">
-                            </a>
-                        </li>
-                        <li class="listaRedesFooter">
-                            <a href="https://linkedin.com/">
-                                <img src="../img/Linkedin.png" alt="Linkedin" class="imgRedes">
-                            </a>
-                        </li>
-                        <li class="listaRedesFooter">
-                            <a href="https://whatsapp.com/">
-                                <img src="../img/whatsapp.png" alt="whatsapp" class="imgRedes">
-        
-                            </a>
-                        </li>
-                    </ul>
+                <ul id="contenedorListaRedes">
+                    <li class="listaRedesFooter">
+                        <a href="https://twitter.com/">
+                            <img src="../img/twitter.png" alt="Twitter" class="imgRedes">
+                        </a>
+                    </li>
+                    <li class="listaRedesFooter">
+                        <a href="https://instagram.com/">
+                            <img src="../img/instagram.png" alt="Instagram" class="imgRedes">
+                        </a>
+                    </li>
+                    <li class="listaRedesFooter">
+                        <a href="https://Facebook.com/">
+                            <img src="../img/facebook.png" alt="Facebook" class="imgRedes">
+                        </a>
+                    </li>
+                    <li class="listaRedesFooter">
+                        <a href="https://linkedin.com/">
+                            <img src="../img/Linkedin.png" alt="Linkedin" class="imgRedes">
+                        </a>
+                    </li>
+                    <li class="listaRedesFooter">
+                        <a href="https://whatsapp.com/">
+                            <img src="../img/whatsapp.png" alt="whatsapp" class="imgRedes">
+
+                        </a>
+                    </li>
+                </ul>
             </div>
 
             <div id="contenedorContactoFooter">
@@ -140,10 +163,12 @@
                 <ul>
                     <li class="estiloTextoFooter">Montevideo, Uruguay</li>
                     <li class="estiloTextoFooter">
-                        <img src="../img/icono_ubicacion.png" alt="ubicacionContacto" class="estiloIconosContacto" >Coronel Brandzen 2007, apto 401.
+                        <img src="../img/icono_ubicacion.png" alt="ubicacionContacto"
+                            class="estiloIconosContacto">Coronel Brandzen 2007, apto 401.
                     </li>
                     <li class="estiloTextoFooter">
-                        <img src="../img/icono_mail.png" alt="mailContacto" id="estiloIconosMailContacto">  matiasvaz95@gmail.com
+                        <img src="../img/icono_mail.png" alt="mailContacto" id="estiloIconosMailContacto">
+                        matiasvaz95@gmail.com
                     </li>
                     <li class="estiloTextoFooter">
                         <img src="../img/icono_cel.png" alt="celContacto" class="estiloIconosContacto">+598 98 36 00 17
@@ -165,8 +190,8 @@
                     </li>
                     <li class="estiloListasFooter">
                         <a href="../index.html" class="estiloTextoFooter">Información de Copyright</a>
-                    </li>                    
-                </ul>               
+                    </li>
+                </ul>
             </div>
         </div>
         <div id="contenedorCopyrightFooter">
@@ -174,4 +199,5 @@
         </div>
     </footer>
 </body>
+
 </html>
