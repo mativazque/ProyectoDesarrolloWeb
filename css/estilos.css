@@ -10,219 +10,143 @@
 
 /* HEADER Y NAV */
 
-.headerGeneral{
-    height: 70px;
-    background-color: #474747;
-    width: 100%;
-    position: sticky;
-    top: 0;
-    z-index: 9;
-}
-
-.headerGeneral nav{
-    height: 100%;
-    width: 100%;
-    display: flex;
-}
-
-#contenedorImgNav{
-    height: 100%;
-    width:23%;
-    text-align: center;
-}
-
-#contenedorImgNav img{
-    position: relative;
-    top: 10px;
-}
-
-#contenedorRellenoNav{
-    height: 100%;
-    width:23%;
-}
-
-.headerGeneral nav ul{
-    display: flex;
-    width: 54%;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.headerGeneral nav ul li{
-    height: 100%;
-    list-style: none;
-    overflow: hidden;
-}
-
-.headerGeneral nav ul li a{
-    height: 100%;
-    text-decoration: none;
-    color: #ffff;
-    height: 100%;
-    display: block;
-    padding-top: 23px;
-}
-
-#margenNavegadorIzquierdo{
-    margin-left: 20px;
-}
-
-#margenNavegadorDerecho{
-    margin-right: 20px;
-}
-
-header nav ul li a:hover{
-    background-color: rgba(0, 0, 0, 0.192);
-}
-
-#contenedorNav{
-
-}
-
 /* MAIN */
 
 main{
-    min-height: 100vh;  
+    min-height: 100vh; 
 }
-
+ 
 /* Index */
 
 /* Index - Portada */
 
-.fondoPortadaindex{
-    height: 100vh;
-    background-color: #242424;
-    text-align: center;
-    color: #ffff;
-}
-
-
-.fondoPortadaindex img{
-    height: 130px;
+#contenedorPortadaIndex{
+    height: 95vh;
+    background-image:url(../img/fondoIndex.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
     position: relative;
-    top:35%;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
+
+#prueba{
+    height: 100vh;
+}
+
+@media only screen and ( max-width:700px){
+    #estiloimgLogoPortada{
+        width: 100%;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+}
+
+@media only screen and ( min-width:700px){
+    #estiloimgLogoPortada{
+        width: 700px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+}
+
+
+#estiloAnclaConocenos{
+    text-decoration: none;
+    color: white;
+    padding-bottom: 100px;
+    justify-items: end;
+}
+
 
 /* Index - Sobre Nosotros */
 
-.introduccionIndex{
-    height: 100vh;
-    background-color: #590004;
+.contenedorPadreSobreNosotrosIndex{
+    min-height: 100vh;
+    background-color: #051923;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
     color: white;
 }
 
-.sobreNosotrosTitulo{
-   font-size: 50px;
-   font-weight: bold;
-   display: inline-block;
-   position: relative;
-   top: 120px;
-   left: 150px;
+.subrayadoTitulo{
+    margin-top: 0;
 }
 
-.sobreNosotrosParrafo{
-    width: 70vw;
-    height: 40%;
-    position: relative;
-    top: 150px;
-    left: 150px;   
+.estiloParrafoIndex{
+    display: inline;
 }
 
-.sobreNosotrosParrafo p{
-    font-size: 38px;
-    line-height: 150%;
-    padding-top: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
+#resalteServiciosIndex{
+    font-weight: bold;
+    color: rgb(161, 139, 98);
+}
 
+.contenedorAnclas{
+    text-align: center;
+    padding-top: 15%;
+}
+
+.anclas{
+    text-decoration: none;
+    color: #ffff;
 }
 
 /* Servicios */
 
 /* Servicios - Principal */
 
-.contenedorPrincipalIntroduccion{
-    height: 100vh;
-    background-color: #7F0104;
-    color: #ffff;
+#contenedorIntroduccionServicios{
+        min-height: 100vh;
+        background-color: #051923;
+        display: flex;
+        color: white;
+    }
+    
+.bgPortadas{
+    background-image: url(../img/portada_serviciosII.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
 }
 
-.tituloServicios{
-    font-size: 50px;
-    font-weight: bold;
-    display: inline-block;
-    position: relative;
-    top: 120px;
-    left: 150px; 
-}
-
-.contenedorParrafoServicios{
-    width: 80%;
-    height: 70%;
-    position: relative;
-    top: 150px;
-    left: 150px;
-}
-
-.estiloParrafoServicios{
-    font-size: 38px;
-    line-height: 150%;
-    padding-top: 30px;
-    margin-left: 20px;
-    margin-right: 20px; 
+.contenedorTextoIntroduccion{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 /* Servicios - Lista de servicios */
 
-.contenedorDetalleServicios{
-    height: 100vh;
-    background-color: #593D3E;
-    color: #ffff;
-    position: relative;
+.contenedorPadreListServicios{
+    min-height: 100vh;
+    background-color: #1f2227;
+    display: flex;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    color: white;
 }
 
-.contenedorHijoDetalleServicios{
-height: 100%;
-width: 50%;
-display: inline-block;
-position: relative;
+.subrayadoTituloServicios{
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
-.contenedorPorTipoServicio{
-    height: 20%;
-    width: 80%;
-    display: inline-block;
-    position: relative;
-    top: 10%;
-    left: 10%;
+.parrafoListaServicios{
+    padding-bottom: 30px;
 }
 
-
-
-.estiloTituloDetalleServicios{
-    font-size: 30px;
-    font-weight: bold;
-
-}
-
-/* Servicios - Imagenes */
-
-.contenedorImgServicios{
-    display: inline-block;
-    position: absolute;
-    top: 200px;
-    z-index: 2;
-}
-
-#contenedorDecorativoServicios{
-    position: absolute;
-    right: 70px;
-    top: 140px;
-    background-color: #1D5064;
-    display: inline-block;
-    height: 30%;
-    width: 30%;
-    border: solid 1px #ffff;
+.titulosListaServ{
+    margin: 0;
 }
 
 /* Equipo */
@@ -559,108 +483,29 @@ color: #ffff;
 
 /* FOOTER */
 
-footer{
-    height: 300px;
-    background-color: #051923;
-}
-
-#contenedorPadreFooter{
-    display: flex;
-    flex-direction: row;
-    height: 250px;
-    background-color: rgb(39, 35, 35);
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-#contenedorMenuFooter{
-    width: 250px;
-    height: 210px;
-}
-
-#contenedorRedesFooter{
-    width: 250px;
-    height: 210px;
-}
-
-#contenedorContactoFooter{
-    width: 250px;
-    height: 210px;
-}
-
-#contenedorLegalFooter{
-    width: 250px;
-    height: 210px;
-}
-
-#contenedorCopyrightFooter{
-    height: 50px;
+.estiloTitulosFooter{
     text-align: center;
-    background-color: black;
-    color: #ffff;
-}
-
-#contenedorHijoCopy{
-    position: relative;
-    top: 15px;
-    font-size: 15px;
-}
-
-.titulosSeccionesFooter{
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
-    margin-left: 20px;
     margin-top: 10px;
-    margin-bottom: 10px;
-    color: #ffff;
-}
+    margin-bottom: 3px;
+    color: #737373;
 
-.estiloTextoFooter{
-    font-size: 14px;
-    line-height: 200%;
-    color: #ffff;
-    list-style: none;
-    text-decoration: none;
-    margin-left: 20px;
 }
 
 .estiloListasFooter{
+    font-size: 15px;
     list-style: none;
+    text-decoration: none;
+    color: #737373;
 }
 
-#contenedorPadreFooter div ul li a{
-    font-weight: bold;
+.imgRedesFooter{
+    margin-left: 15px;
+    margin-right: 7px;
 }
 
-
-#contenedorListaRedes{
-    display: flex;
-    width: 90%;
-    height: 25%;
-    margin-left: 10px;
+#estiloCopy{
+    font-size: 15px;
+    text-align: center;
 }
-
-
-.listaRedesFooter{
-    list-style: none;
-    height: 30px;
-    padding-left: 10px;
-    margin-top: 5px;
-}
-
-.imgRedes{
-    height: 30px;
-}
-
-.estiloIconosContacto{
-    height: 20px;
-    margin-right: 5px;
-}
-
-#estiloIconosMailContacto{
-    width: 20px;
-    height: 15px;
-    margin-right: 5px;
-
-}
-

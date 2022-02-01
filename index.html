@@ -17,180 +17,167 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">    
 </head>
 
 <body>
     <!--navegador-->
-    <nav class="navbar fixed-top navbar-expand-md bg-ligh navbar-dark" style="background-color: #474747;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="img/logo_en_blanco.png" alt="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Quienes somos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="html/servicios.html">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="html/equipo.html">Equipo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="html/trabaja con nosotros.html">Trabajá con nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="html/contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Anular nav original 
-    <header class="headerGeneral">
-        <nav>
-            <div id="contenedorImgNav">
-                <a href="index.html">
-                    <img src="img/logo_en_blanco.png" alt="logo">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logoNav.png" alt="logo nav">
                 </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Quienes somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="html/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="html/equipo.html">Equipo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="html/trabaja con nosotros.html">Trabajá con nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="html/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <ul>
-                <li id="margenNavegadorIzquierdo">
-                    <a href="index.html">Quienes somos</a>
-                </li>
-                <li>
-                    <a href="html/servicios.html">Servicios</a>
-                </li>
-                <li>
-                    <a href="html/equipo.html">Equipo</a>
-                </li>
-                <li>
-                    <a href="html/trabaja con nosotros.html">Trabajá con nosotros</a>
-                </li>
-                <li id="margenNavegadorDerecho">
-                    <a href="html/contacto.html">Contacto</a>
-                </li>
-            </ul>
-            <div id="contenedorRellenoNav"></div>
         </nav>
     </header>
-    Anular nav original-->
 
     <main>
-        <!--Primera parte (Logo con imagen de fondo)-->
-        <div class="fondoPortadaindex">
-            <img src="img/logo_en_blanco.png" alt="Logo">
+        <!--Portada con logo-->
+        <div id="contenedorPortadaIndex">
+            <div></div>
+            <img src="img/logoPortada.png" alt="" class="animate__animated animate__backInLeft animate__slow" id="estiloimgLogoPortada">
+            <a href="#sobreNosotros" id="estiloAnclaConocenos">
+                <img src="img/icon_ingresar.png" alt="icon_ingresar" class="animate__animated animate__pulse animate__infinite" >
+            </a>
         </div>
-        <!--Segunda parte "sobre nosotros"-->
-        <div class="introduccionIndex">
-            <h2 class="sobreNosotrosTitulo">Sobre nosotros</h2>
-            <div class="sobreNosotrosParrafo">
-                <p> vtae velit dolorem ex! Reprehenderit, quisquam consectetur adipisicing elit.vtae velit dolorem ex!
-                    Reprehenderit, quisquam consectetur adipisicing elit. </p>
+
+
+        <!--Segunda parte "Sobre nosotros"-->
+
+        <div class="contenedorPadreSobreNosotrosIndex" id="sobreNosotros">
+            <div class="container">
+                <div class="row justify-content-center align-items-center" style="height: 100%;">
+                    <div class="col col-xxl-10 col-xl-10 col-lg-10">
+                        <h1>Sobre nosotros
+                        </h1>
+                        <hr class="subrayadoTitulo">
+                        <div>
+                            <h2 class="estiloParrafoIndex">Somos una firma uruguaya dedicada a la prestación de
+                                servicios profesionales de
+                                caracter </h2>
+                            <h2 class="estiloParrafoIndex" id="resalteServiciosIndex">contable, fiscal, laboral y
+                                societario</h2>
+                            <h2 class="estiloParrafoIndex">. Nuestra misión es brindar servicios confiables que
+                                agreguen
+                                valor al cliente. Contamos con experiencia en empresas de diferentes rubros, tanto
+                                nacionales como internacionales. </h2>
+                        </div>
+                        <div class="contenedorAnclas"">
+                            <a href="html/servicios.html" class="anclas">Conozca nuestros servicios</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <!--Tercera parte "comentarios clientes"-->
     </main>
-    <footer>
-        <div id="contenedorPadreFooter">
 
-            <div id="contenedorMenuFooter">
-                <h4 class="titulosSeccionesFooter">MENÚ PRINCIPAL</h4>
-                <ul>
-                    <li class="estiloListasFooter">
-                        <a href="index.html" class="estiloTextoFooter">Quienes somos</a>
-                    </li>
-                    <li class="estiloListasFooter">
-                        <a href="html/servicios.html" class="estiloTextoFooter">Servicios</a>
-                    </li>
-                    <li class="estiloListasFooter">
-                        <a href="html/equipo.html" class="estiloTextoFooter">Equipo</a>
-                    </li>
-                    <li class="estiloListasFooter">
-                        <a href="html/trabaja con nosotros.html" class="estiloTextoFooter">Trabajá con nosotros</a>
-                    </li>
-                    <li class="estiloListasFooter">
-                        <a href="html/contacto.html" class="estiloTextoFooter">Contacto</a>
-                    </li>
-                </ul>
+    <!--Footer-->
+    <footer class="bg-black pt-3 pb-3">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 text-center pb-3">
+                    <h6 class="estiloTitulosFooter">MENÚ PRINCIPAL</h6>
+                    <hr class="mb-2 mt-0 mx-auto" style="width: 120px; height: 2px; color: #ffff;">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link p-0 estiloListasFooter" href="index.html" style="color: #737373;">Quienes
+                                somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0 estiloListasFooter" href="html/servicios.html"
+                                style="color: #737373;">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0 estiloListasFooter" href="html/equipo.html"
+                                style="color: #737373;">Equipo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0 estiloListasFooter" href="html/trabaja con nosotros.html"
+                                style="color: #737373;">Trabajá con
+                                nosotros</a>
+                        </li>
+                        <li class="nav-item p-0 text-white">
+                            <a class="nav-link p-0 estiloListasFooter" href="html/contacto.html"
+                                style="color: #737373;">Contacto</a>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 text-center pb-3">
+                    <h6 class="estiloTitulosFooter">BÚSCANOS EN LAS REDES</h6>
+                    <hr class="mb-2 mt-0 mx-auto" style="width: 175px; height: 2px; color: white;">
+                    <div id="contenerImgRedesFotter">
+                        <a href="https://twitter.com/" class="estiloListasFooter">
+                            <img src="img/icon_twitter.png" alt="Twitter" class="imgRedesFooter">
+                        </a>
+                        <a href="https://instagram.com/" class="estiloListasFooter">
+                            <img src="img/icon_instagram.png" alt="Instagram" class="imgRedesFooter">
+                        </a>
+                        <a href="https://Facebook.com/" class="estiloListasFooter">
+                            <img src="img/icon_facebook.png" alt="Facebook" class="imgRedesFooter">
+                        </a>
+                        <a href="https://linkedin.com/" class="estiloListasFooter">
+                            <img src="img/icon_linkedin.png" alt="Linkedin" class="imgRedesFooter">
+                        </a>
+                        <a href="https://whatsapp.com/" class="estiloListasFooter">
+                            <img src="img/icon_whatsapp.png" alt="whatsapp" class="imgRedesFooter">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 text-center pb-3">
+                    <h6 class="estiloTitulosFooter">CONTÁCTANOS</h6>
+                    <hr class="mb-2 mt-0 mx-auto" style="width: 110px; height: 2px; color: #ffff;">
+                    <ul style="padding: 0;">
+                        <li class="estiloListasFooter">
+                            <img src="img/icon_ubicacion.png" alt="ubicacionContacto"
+                                class="estiloIconosContacto">Coronel
+                            Brandzen 2007, Montevideo, Uruguay
+                        </li>
+                        <li class="estiloListasFooter">
+                            <img src="img/icon_mail.png" alt="mailContacto" id="estiloIconosMailContacto">
+                            matiasvaz95@gmail.com
+                        </li>
+                        <li class="estiloListasFooter">
+                            <img src="img/icon_tel.png" alt="celContacto" class="estiloIconosContacto">+598 98 36 00 17
+                        </li>
+                        <li class="estiloListasFooter">
+                            <a href="html/contacto.html" class="estiloListasFooter" style="font-weight: bold">Envianos
+                                un mensaje</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-
-            <div id="contenedorRedesFooter">
-                <h4 class="titulosSeccionesFooter">V&A EN REDES</h4>
-                <ul id="contenedorListaRedes">
-                    <li class="listaRedesFooter">
-                        <a href="https://twitter.com/">
-                            <img src="img/twitter.png" alt="Twitter" class="imgRedes">
-                        </a>
-                    </li>
-                    <li class="listaRedesFooter">
-                        <a href="https://instagram.com/">
-                            <img src="img/instagram.png" alt="Instagram" class="imgRedes">
-                        </a>
-                    </li>
-                    <li class="listaRedesFooter">
-                        <a href="https://Facebook.com/">
-                            <img src="img/facebook.png" alt="Facebook" class="imgRedes">
-                        </a>
-                    </li>
-                    <li class="listaRedesFooter">
-                        <a href="https://linkedin.com/">
-                            <img src="img/Linkedin.png" alt="Linkedin" class="imgRedes">
-                        </a>
-                    </li>
-                    <li class="listaRedesFooter">
-                        <a href="https://whatsapp.com/">
-                            <img src="img/whatsapp.png" alt="whatsapp" class="imgRedes">
-                        </a>
-                    </li>
-                </ul>
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-muted" id="estiloCopy">
+                        © 2021, Vázquez & Asociados. All rights reserved.
+                    </p>
+                </div>
             </div>
-
-            <div id="contenedorContactoFooter">
-                <h4 class="titulosSeccionesFooter">CONTACTO</h4>
-                <ul>
-                    <li class="estiloTextoFooter">Montevideo, Uruguay</li>
-                    <li class="estiloTextoFooter">
-                        <img src="img/icono_ubicacion.png" alt="ubicacionContacto" class="estiloIconosContacto">Coronel
-                        Brandzen 2007, apto 401.
-                    </li>
-                    <li class="estiloTextoFooter">
-                        <img src="img/icono_mail.png" alt="mailContacto" id="estiloIconosMailContacto">
-                        matiasvaz95@gmail.com
-                    </li>
-                    <li class="estiloTextoFooter">
-                        <img src="img/icono_cel.png" alt="celContacto" class="estiloIconosContacto">+598 98 36 00 17
-                    </li>
-                    <li class="estiloListasFooter">
-                        <a href="html/contacto.html" class="estiloTextoFooter">Envianos un mensaje</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div id="contenedorLegalFooter">
-                <h4 class="titulosSeccionesFooter">LEGAL</h4>
-                <ul>
-                    <li class="estiloListasFooter">
-                        <a href="index.html" class="estiloTextoFooter">Política de privacidad</a>
-                    </li>
-                    <li class="estiloListasFooter">
-                        <a href="index.html" class="estiloTextoFooter">Política de cookies</a>
-                    </li>
-                    <li class="estiloListasFooter">
-                        <a href="index.html" class="estiloTextoFooter">Información de Copyright</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div id="contenedorCopyrightFooter">
-            <div id="contenedorHijoCopy">© 2021, Vázquez & Asociados. All rights reserved.</div>
         </div>
     </footer>
+
 </body>
 
 </html>
