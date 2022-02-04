@@ -1,0 +1,112 @@
+
+/* Portada - Intro */
+
+.contenedorPrincipalIntroduccionEquipo {
+    height: 100vh;
+    background-color: #204b57;
+    color: #ffff;
+    position: relative;
+}
+
+.tituloIntroduccionEquipo {
+    font-size: 50px;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    top: 60px;
+    left: 40%;
+}
+
+.parrafoIntroduccionEquipo {
+    position: relative;
+    width: 80%;
+    height: 20%;
+    top: 250px;
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    line-height: 150%;
+}
+
+#imagenPortadaEquipo {
+    position: absolute;
+    top: 450px;
+    left: 30%;
+}
+
+/* Principal */
+
+.contenedorSociosEquipo {
+    height: 100vh;
+    background-color: #ffff;
+    color: #ffff;
+    position: relative;
+}
+
+.contenedorHijoEquipo {
+    height: 100vh;
+    width: 60%;
+    background-color: #590004;
+    color: #ffff;
+    position: relative;
+}
+
+/* Contenedores de texto Socios */
+
+#seccionSocio {
+    height: 40%;
+    width: 65%;
+    display: inline-block;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+#seccionSocia {
+    height: 40%;
+    width: 65%;
+    display: inline-block;
+    position: relative;
+    top: 120px;
+    left: 50px;
+}
+
+/* Estilo de texto Socios */
+
+.estiloTituloSocio {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.estiloSubTituloSocio {
+    font-weight: lighter;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.estiloParrafoSocio {
+    margin-bottom: 20px;
+}
+
+.estiloDatosSocios {
+    display: inline-block;
+}
+
+/* Imagenes socios */
+
+#socio {
+    position: absolute;
+    top: 25px;
+    right: 400px;
+    height: 320px;
+    border: solid black 2px;
+}
+
+#socia {
+    position: absolute;
+    bottom: 25px;
+    right: 400px;
+    height: 320px;
+    border: solid black 2px;
+}

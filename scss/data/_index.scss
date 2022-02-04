@@ -1,0 +1,46 @@
+/* Portada */
+
+#contenedorPortadaIndex {
+
+    @include bgImg (url(../img/fondoIndex.png)); 
+    min-height: $hight-main-intro;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    #imgLogoPortada {
+        @media only screen and (max-width: 700px) {
+            width: 100%;
+            padding-right: 5%;
+            padding-left: 5%;
+        }
+
+        @media only screen and (min-width: 700px) {
+            width: 700px;
+            padding-left: 35px;
+            padding-right: 35px;
+        }
+    }
+}
+
+/* Sobre Nosotros */
+
+.contPrincipalViewPort-index {
+    @extend .contPrincipalViewPort;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    hr {
+        margin-top: $mt-subrayado-titulo;
+    }
+
+    .estiloParrafoIndex {
+        display: inline;
+    }
+
+    #resalteServiciosIndex {
+        font-weight: bold;
+        color: rgb(161, 139, 98);
+    }
+}
