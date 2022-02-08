@@ -1,23 +1,15 @@
+
 /* Portada-Intro */
 
 #contenedorIntroduccionServicios {
-    min-height: $hight-main-intro;
-    background-color: #051923;
-    display: flex;
-    flex-direction: row;
-    color: white;
+    @include contenedorIntroduccion(#051923);
 
     #bgImgServicios {
         @include bgImg(url(../img/portada_serviciosII.png));
     }
 
-    .contenedorTextoIntroduccion {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        justify-content: center;
-        padding-left: 50px;
-        padding-right: 50px;
+    #contTextoIntroServ {
+        @include contTextoIntro(50px, 50px);
     }
 
     hr {

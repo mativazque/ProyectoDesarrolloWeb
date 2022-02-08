@@ -1,112 +1,74 @@
 
-/* Portada - Intro */
+/* Portada-Intro */
 
-.contenedorPrincipalIntroduccionEquipo {
-    height: 100vh;
-    background-color: #204b57;
-    color: #ffff;
-    position: relative;
+#contenedorIntroduccionEquipo {
+    @include contenedorIntroduccion(#110606);
+   
+    #bgImgEquipo {
+        @include bgImg(url(../img/portada_equipo.png));
+    }
+
+    #contTextoIntroEquipo {
+        @include contTextoIntro(50px, 50px);
+    }
+
+    hr {
+        margin-top: $mt-subrayado-titulo;
+    }
 }
 
-.tituloIntroduccionEquipo {
-    font-size: 50px;
-    font-weight: bold;
-    display: inline-block;
-    position: relative;
-    top: 60px;
-    left: 40%;
+/* Socios */
+
+#contenedorMainEquipo{
+    background-color: #111111;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
-.parrafoIntroduccionEquipo {
-    position: relative;
-    width: 80%;
-    height: 20%;
-    top: 250px;
-    display: inline-block;
-    font-size: 20px;
-    text-align: center;
-    line-height: 150%;
+.listaContactoSocios{
+    list-style: none;
+    font-size: 17px;
 }
 
-#imagenPortadaEquipo {
-    position: absolute;
-    top: 450px;
-    left: 30%;
+.imgSocios{
+    height: 400px;
+    box-shadow: 5px 5px 10px 0px  #ffff;
 }
 
-/* Principal */
-
-.contenedorSociosEquipo {
-    height: 100vh;
-    background-color: #ffff;
-    color: #ffff;
-    position: relative;
+.ulListaSocios{
+    padding: 0;
 }
 
-.contenedorHijoEquipo {
-    height: 100vh;
-    width: 60%;
-    background-color: #590004;
-    color: #ffff;
-    position: relative;
+.subTituloContadores{
+    color:rgb(161, 139, 98);
 }
 
-/* Contenedores de texto Socios */
-
-#seccionSocio {
-    height: 40%;
-    width: 65%;
-    display: inline-block;
-    position: relative;
-    top: 50px;
-    left: 50px;
+.parrafoSocios{
+    font-size: 17px;
+    padding-bottom: 40px;
 }
 
-#seccionSocia {
-    height: 40%;
-    width: 65%;
-    display: inline-block;
-    position: relative;
-    top: 120px;
-    left: 50px;
+@media only screen and (max-width: 960px) {
+
+    .imgSocios{
+        height: 360px;
+        box-shadow: 5px 5px 10px 0px  #ffff;
+    }
+    
+    .parrafoSocios{
+        font-size: 17px;
+        padding-bottom: 10px;
+    } 
+
+    .listaContactoSocios{
+        list-style: none;
+        font-size: 15px;
+
+    }
+
+    .ulListaSocios{
+        padding: 0;
+    }
+
 }
 
-/* Estilo de texto Socios */
-
-.estiloTituloSocio {
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.estiloSubTituloSocio {
-    font-weight: lighter;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.estiloParrafoSocio {
-    margin-bottom: 20px;
-}
-
-.estiloDatosSocios {
-    display: inline-block;
-}
-
-/* Imagenes socios */
-
-#socio {
-    position: absolute;
-    top: 25px;
-    right: 400px;
-    height: 320px;
-    border: solid black 2px;
-}
-
-#socia {
-    position: absolute;
-    bottom: 25px;
-    right: 400px;
-    height: 320px;
-    border: solid black 2px;
-}
