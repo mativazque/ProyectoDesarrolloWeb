@@ -26,10 +26,13 @@
 
 /* Sobre Nosotros */
 
-.contPrincipalViewPort-index {
-    @extend .contPrincipalViewPort;
+.contenedorMainIndex {
+    @include contenedorMain (#051923);
     padding-top: 50px;
     padding-bottom: 50px;
+    display: flex;
+    color: #ffff;
+
 
     hr {
         margin-top: $mt-subrayado-titulo;

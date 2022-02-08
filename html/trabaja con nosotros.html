@@ -17,6 +17,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://kit.fontawesome.com/48c451096e.js" crossorigin="anonymous"></script>
 </head>
 
@@ -56,52 +57,80 @@
     </header>
 
     <main>
-        <!--Inicio Título + Imagen de fondo-->
-        <div id="contenedorIntoduccionTrabaja">
-            <h1 class="estiloTituloTrabaja">Trabajá con nosotros</h1>
-        </div>
-        <!--Fin Título + Imagen de fondo-->
-
-        <!--Cultura de empleados-->
-        <div id="contenedorCulturaOrganizacion">
-            <div id="contenedorHijoCulturaOrganizacion">
-                <h2>¿Por qué trabajar en Vazquez & Asociados?</h2><br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
-                    nesciunt sint, eaque explicabo saepe suscipit rerum exercitationem,
-                    quae beatae repellat quod similique fugit et veniam accusantium nisi
-                    mollitia consectetur reiciendis. Eaque explicabo saepe suscipit rerum exercitationem,
-                    quae beatae repellat quod similique fugit et veniam accusantium nisi
-                    mollitia consectetur reiciendis</p>
+        <!--Introducción con Portada-->
+        <div id="contenedorIntroduccionWork">
+            <div class="container-fluid">
+                <div class="row" style="height: 100%;">
+                    <div class="col-12 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 order-lg-2 order-xl-2 order-xxl-2"
+                        id="bgImgWork">
+                    </div>
+                    <div
+                        class="col-12 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 order-lg-1 order-xl-1 order-xxl-1">
+                        <div id="contTextoIntroWork">
+                            <h1 class="estiloTítulo_1">¿Por qué trabajar en V&A?</h1>
+                            <hr>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut voluptas incidunt
+                                consectetur ducimus voluptatum rem enim velit temporibus laudantium impedit, aliquam
+                                aliquid doloribus maxime sed ipsam excepturi. Ad, sequi dolor.
+                            </p>
+                            <div class="contenedorAnclas animate__animated animate__pulse animate__infinite">
+                                <a href="#anclaLlamados" class="anclas">
+                                    Ver llamados abiertos
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <!--Fin cultura de empleados-->
+
 
         <!--LLamados-->
-        <div id="contenedorLLamados">
-            <h2 id="estiloTituloLLamadosAbiertos">LLamados abiertos</h2>
-            <div class="row mt-4" style="justify-content: space-around;">
-                <div class="col-sm-5">
-                    <div class="card ">
-                        <div class="card-body">
-                            <h5 class="card-title">Estudiantes Contador Público</h5>
-                            <p class="card-text">Buscamos estudiantes de Contador Público cursando el segundo o tercer
-                                año de carrera.</p>
-                            <a href="estudiantesccee.html" class="btn btn-secondary">Postularme</a>
-                        </div>
+        <div class="contenedorMainWork" id="anclaLlamados">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <h2>Llamados abiertos</h2>
+                        <hr>
                     </div>
                 </div>
-                <div class="col-sm-5">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Contador Público Junior</h5>
-                            <p class="card-text">Buscamos Contadores Públicos recientemente recibidos con el menos 2
-                                años de experiencia.</p>
-                            <a href="contadorjunior.html" class="btn btn-secondary">Postularme</a>
+            </div>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+
+                        <div class="row mt-4" style="justify-content: space-around;">
+                            <div class="col-10 col-xxl-5 col-xl-5 col-lg-5 col-md-10 col-sm-10 mb-5">
+                                <div class="card bg-dark border">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Estudiantes Contador Público</h5>
+                                        <p class="card-text pCardsLlamados">Buscamos estudiantes de Contador Público cursando el
+                                            segundo o tercer
+                                            año de carrera.</p>
+                                        <a href="estudiantesccee.html" class="btn btn-secondary">Postularme</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-10 col-xxl-5 col-xl-5 col-lg-5 col-md-10 col-sm-10 mb-5">
+                                <div class="card bg-dark border">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Contador Público Junior</h5>
+                                        <p class="card-text pCardsLlamados">Buscamos Contadores Públicos recientemente recibidos con el
+                                            menos 2
+                                            años de experiencia.</p>
+                                        <a href="contadorjunior.html" class="btn btn-secondary">Postularme</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <img src="../img/equipo.jpg" alt="" id="imgLlamados">
+
+            <div></div>
         </div>
     </main>
 

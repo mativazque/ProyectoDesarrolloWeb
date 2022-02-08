@@ -1,81 +1,52 @@
 
-/* SEPARAR EN EL OTRO ARCHIVO SCSS LO QUE CORRESPONDE A LOS LLAMADOS */
+/* Portada - Intro */
 
-/* Trabajá con nosotros */
+#contenedorIntroduccionWork {
+    @include contenedorIntroduccion(#0f0f0f);
 
-/* Trabajá con nosotros - Introducción */
+    #bgImgWork {
+        @include bgImg(url(../img/jovenes_trabajando.png));
+    }
 
-#contenedorIntoduccionTrabaja {
-    height: 35vh;
-    background-color: #051923;
-    color: #ffff;
-    text-align: center;
+    #contTextoIntroWork {
+        @include contTextoIntro(50px, 50px);
+    }
+
+    hr {
+        margin-top: $mt-subrayado-titulo;
+    }
 }
 
-.estiloTituloTrabaja {
-    font-size: 50px;
-    font-weight: bold;
-    position: relative;
-    top: 50%;
-}
-
-/* Trabajá con nosotros - LLamados */
-
-#contenedorLLamados {
-    background-color: #590004;
-    height: 100vh;
-    position: relative;
-}
-
-#imgLlamados {
-    height: 320px;
-    position: relative;
-    top: 30px;
-    left: 50px;
-}
-
-#estiloTituloLLamadosAbiertos {
-    font-size: 34px;
-    display: inline-block;
-    position: relative;
-    top: 15px;
-    left: 80px;
-    font-weight: bold;
-    color: #ffff;
-}
-
-/* Trabajá con nosotros - Por qué trabajar en V & A */
-
-#contenedorCulturaOrganizacion {
-    height: 40vh;
-    background-color: #7a3e43;
-    color: #ffff;
-}
-
-#contenedorHijoCulturaOrganizacion {
-    height: 70%;
-    width: 60%;
-    background-color: #55262a;
-    color: #ffff;
-    position: relative;
-    left: 20%;
-    top: 16%;
-}
-
-#contenedorHijoCulturaOrganizacion h2 {
-    text-align: center;
-    font-weight: bold;
-    font-size: 25px;
-    padding-top: 10px;
-}
-
-#contenedorHijoCulturaOrganizacion p {
-    margin-left: 10px;
-    margin-right: 10px;
-}
 
 /* Llamados */
 
+.contenedorMainWork {
+    @include contenedorMain (#181818);
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .pCardsLlamados{
+        color: rgb(161, 139, 98);
+    }
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+/*
 #contenedorPadreLlamadosAbiertos {
     height: 70vh;
     background-color: #1d5064;
@@ -145,3 +116,6 @@
     right: 8%;
     border: 2px solid #ffff;
 }
+
+*/
+

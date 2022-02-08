@@ -19,34 +19,37 @@
 
 /* Socios */
 
-#contenedorMainEquipo{
-    background-color: #111111;
+.contenedorMainEquipo{
+    @include contenedorMain (#111111);
     padding-top: 100px;
     padding-bottom: 100px;
+
+    .listaContactoSocios{
+        list-style: $list-style;
+        font-size: 17px;
+    }
+    
+    .imgSocios{
+        height: 400px;
+        box-shadow: 5px 5px 10px 0px  #ffff;
+    }
+    
+    .ulListaSocios{
+        padding: 0;
+    }
+    
+    .subTituloContadores{
+        color:rgb(161, 139, 98);
+    }
+    
+    .parrafoSocios{
+        font-size: 19px;
+        padding-bottom: 40px;
+    }
+
 }
 
-.listaContactoSocios{
-    list-style: none;
-    font-size: 17px;
-}
 
-.imgSocios{
-    height: 400px;
-    box-shadow: 5px 5px 10px 0px  #ffff;
-}
-
-.ulListaSocios{
-    padding: 0;
-}
-
-.subTituloContadores{
-    color:rgb(161, 139, 98);
-}
-
-.parrafoSocios{
-    font-size: 17px;
-    padding-bottom: 40px;
-}
 
 @media only screen and (max-width: 960px) {
 
@@ -60,13 +63,13 @@
         padding-bottom: 10px;
     } 
 
-    .listaContactoSocios{
-        list-style: none;
-        font-size: 15px;
-    }
-
     .ulListaSocios{
         padding: 0;
+
+        .listaContactoSocios{
+            list-style: $list-style;
+            font-size: 15px;
+        }
     }
 
 }

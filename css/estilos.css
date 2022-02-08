@@ -29,12 +29,6 @@ main {
   text-decoration: none;
   color: #ffff; }
 
-.contPrincipalViewPort, .contPrincipalViewPort-index {
-  min-height: 100vh;
-  background-color: #051923;
-  display: flex;
-  color: #ffff; }
-
 /* Intro con Portada */
 /* Portada */
 #contenedorPortadaIndex {
@@ -60,14 +54,18 @@ main {
       padding-right: 35px; } }
 
 /* Sobre Nosotros */
-.contPrincipalViewPort-index {
+.contenedorMainIndex {
+  min-height: 100vh;
+  background-color: #051923;
   padding-top: 50px;
-  padding-bottom: 50px; }
-  .contPrincipalViewPort-index hr {
+  padding-bottom: 50px;
+  display: flex;
+  color: #ffff; }
+  .contenedorMainIndex hr {
     margin-top: 0px; }
-  .contPrincipalViewPort-index .estiloParrafoIndex {
+  .contenedorMainIndex .estiloParrafoIndex {
     display: inline; }
-  .contPrincipalViewPort-index #resalteServiciosIndex {
+  .contenedorMainIndex #resalteServiciosIndex {
     font-weight: bold;
     color: #a18b62; }
 
@@ -95,15 +93,15 @@ main {
     margin-top: 0px; }
 
 /* Lista de servicios */
-.contenedorPadreMainServicios {
-  display: flex;
-  flex-direction: column;
+.contenedorMainServ {
+  min-height: 100vh;
   background-color: #181818;
-  color: #ffff; }
+  display: flex;
+  flex-direction: column; }
   @media only screen and (max-width: 600px) {
-    .contenedorPadreMainServicios #contenedorPadreGrillaServ {
+    .contenedorMainServ #contenedorPadreGrillaServ {
       display: flex; }
-      .contenedorPadreMainServicios #contenedorPadreGrillaServ #contenedorHijoGrillaServ {
+      .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ {
         background-color: #181818;
         display: grid;
         width: 100%;
@@ -114,7 +112,7 @@ main {
         grid-template-areas: "a1" "a2" "a3" "a4";
         justify-content: center;
         align-content: space-evenly; }
-        .contenedorPadreMainServicios #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_i, .contenedorPadreMainServicios #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_ii, .contenedorPadreMainServicios #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_iii, .contenedorPadreMainServicios #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_iv {
+        .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_i, .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_ii, .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_iii, .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_iv {
           grid-area: a1;
           background-color: #111111;
           display: flex;
@@ -123,29 +121,29 @@ main {
           padding-left: 20px;
           padding-right: 20px;
           box-shadow: 0px 0px 10px 0px  #ffff; }
-        .contenedorPadreMainServicios #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_ii {
+        .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_ii {
           grid-area: a2; }
-        .contenedorPadreMainServicios #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_iii {
+        .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_iii {
           grid-area: a3; }
-        .contenedorPadreMainServicios #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_iv {
+        .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_iv {
           grid-area: a4; }
-        .contenedorPadreMainServicios #contenedorPadreGrillaServ #contenedorHijoGrillaServ .parrafosListServ {
+        .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ .parrafosListServ {
           font-size: 17px;
           display: block;
           margin: 0;
           line-height: 150%;
           color: #ffff; }
-        .contenedorPadreMainServicios #contenedorPadreGrillaServ #contenedorHijoGrillaServ .titulosListaServ {
+        .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ .titulosListaServ {
           text-align: center;
           margin-top: 5px;
           margin-bottom: 0px;
           color: #a18b62; }
-        .contenedorPadreMainServicios #contenedorPadreGrillaServ #contenedorHijoGrillaServ .subrayadoTitulosServ {
+        .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ .subrayadoTitulosServ {
           color: #a18b62; } }
   @media only screen and (min-width: 600px) {
-    .contenedorPadreMainServicios #contenedorPadreGrillaServ {
+    .contenedorMainServ #contenedorPadreGrillaServ {
       display: flex; }
-      .contenedorPadreMainServicios #contenedorPadreGrillaServ #contenedorHijoGrillaServ {
+      .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ {
         background-color: #181818;
         display: grid;
         width: 100%;
@@ -156,7 +154,7 @@ main {
         grid-template-areas: "a1" "a2" "a3" "a4";
         justify-content: center;
         align-content: space-evenly; }
-        .contenedorPadreMainServicios #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_i, .contenedorPadreMainServicios #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_ii, .contenedorPadreMainServicios #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_iii, .contenedorPadreMainServicios #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_iv {
+        .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_i, .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_ii, .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_iii, .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_iv {
           grid-area: a1;
           background-color: #111111;
           display: flex;
@@ -165,7 +163,7 @@ main {
           padding-left: 20px;
           padding-right: 20px;
           box-shadow: 0px 0px 10px 0px  #ffff; }
-        .contenedorPadreMainServicios #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_ii {
+        .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_ii {
           grid-area: a2;
           background-color: #111111;
           display: flex;
@@ -174,7 +172,7 @@ main {
           padding-left: 20px;
           padding-right: 20px;
           box-shadow: 0px 0px 10px 0px  #ffff; }
-        .contenedorPadreMainServicios #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_iii {
+        .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_iii {
           grid-area: a3;
           background-color: #111111;
           display: flex;
@@ -183,7 +181,7 @@ main {
           padding-left: 20px;
           padding-right: 20px;
           box-shadow: 0px 0px 10px 0px  #ffff; }
-        .contenedorPadreMainServicios #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_iv {
+        .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_iv {
           grid-area: a4;
           background-color: #111111;
           display: flex;
@@ -192,27 +190,27 @@ main {
           padding-left: 20px;
           padding-right: 20px;
           box-shadow: 0px 0px 10px 0px  #ffff; }
-        .contenedorPadreMainServicios #contenedorPadreGrillaServ #contenedorHijoGrillaServ .parrafosListServ {
+        .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ .parrafosListServ {
           font-size: 17px;
           display: block;
           margin: 0;
           line-height: 150%;
           color: #ffff; }
-        .contenedorPadreMainServicios #contenedorPadreGrillaServ #contenedorHijoGrillaServ .titulosListaServ {
+        .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ .titulosListaServ {
           text-align: center;
           margin-top: 5px;
           margin-bottom: 0px;
           color: #a18b62; }
-        .contenedorPadreMainServicios #contenedorPadreGrillaServ #contenedorHijoGrillaServ .subrayadoTitulosServ {
+        .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ .subrayadoTitulosServ {
           color: #a18b62; } }
   @media only screen and (min-width: 1200px) {
-    .contenedorPadreMainServicios #contenedorPadreGrillaServ {
+    .contenedorMainServ #contenedorPadreGrillaServ {
       background-color: #181818;
       height: 85vh;
       justify-content: center;
       align-items: center;
       display: flex; }
-      .contenedorPadreMainServicios #contenedorPadreGrillaServ #contenedorHijoGrillaServ {
+      .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ {
         background-color: #181818;
         display: grid;
         width: 1200px;
@@ -223,7 +221,7 @@ main {
         grid-template-areas: "a1 a2" "a3 a4";
         justify-content: space-evenly;
         align-content: space-evenly; }
-        .contenedorPadreMainServicios #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_i, .contenedorPadreMainServicios #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_ii, .contenedorPadreMainServicios #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_iii, .contenedorPadreMainServicios #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_iv {
+        .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_i, .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_ii, .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_iii, .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_iv {
           grid-area: a1;
           background-color: #111111;
           display: flex;
@@ -232,7 +230,7 @@ main {
           padding-left: 20px;
           padding-right: 20px;
           box-shadow: 0px 0px 10px 0px  #ffff; }
-        .contenedorPadreMainServicios #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_ii {
+        .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_ii {
           grid-area: a2;
           background-color: #111111;
           display: flex;
@@ -241,7 +239,7 @@ main {
           padding-left: 20px;
           padding-right: 20px;
           box-shadow: 0px 0px 10px 0px  #ffff; }
-        .contenedorPadreMainServicios #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_iii {
+        .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_iii {
           grid-area: a3;
           background-color: #111111;
           display: flex;
@@ -250,7 +248,7 @@ main {
           padding-left: 20px;
           padding-right: 20px;
           box-shadow: 0px 0px 10px 0px  #ffff; }
-        .contenedorPadreMainServicios #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_iv {
+        .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_iv {
           grid-area: a4;
           background-color: #111111;
           display: flex;
@@ -259,23 +257,23 @@ main {
           padding-left: 20px;
           padding-right: 20px;
           box-shadow: 0px 0px 10px 0px  #ffff; }
-        .contenedorPadreMainServicios #contenedorPadreGrillaServ #contenedorHijoGrillaServ .parrafosListServ {
+        .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ .parrafosListServ {
           font-size: 19px;
           display: block;
           margin: 0;
           line-height: 150%;
           color: white; }
-        .contenedorPadreMainServicios #contenedorPadreGrillaServ #contenedorHijoGrillaServ .titulosListaServ {
+        .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ .titulosListaServ {
           text-align: center;
           margin-top: 5px;
           margin-bottom: 0px;
           color: #a18b62; }
-        .contenedorPadreMainServicios #contenedorPadreGrillaServ #contenedorHijoGrillaServ .subrayadoTitulosServ {
+        .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ .subrayadoTitulosServ {
           color: #a18b62; } }
-  .contenedorPadreMainServicios #subrayadoTituloServ {
+  .contenedorMainServ #subrayadoTituloServ {
     margin-top: 0px;
     margin-bottom: 0px; }
-  .contenedorPadreMainServicios .imgLogosClientes {
+  .contenedorMainServ .imgLogosClientes {
     height: 160px; }
 
 /* Portada-Intro */
@@ -302,28 +300,24 @@ main {
     margin-top: 0px; }
 
 /* Socios */
-#contenedorMainEquipo {
+.contenedorMainEquipo {
+  min-height: 100vh;
   background-color: #111111;
   padding-top: 100px;
   padding-bottom: 100px; }
-
-.listaContactoSocios {
-  list-style: none;
-  font-size: 17px; }
-
-.imgSocios {
-  height: 400px;
-  box-shadow: 5px 5px 10px 0px  #ffff; }
-
-.ulListaSocios {
-  padding: 0; }
-
-.subTituloContadores {
-  color: #a18b62; }
-
-.parrafoSocios {
-  font-size: 17px;
-  padding-bottom: 40px; }
+  .contenedorMainEquipo .listaContactoSocios {
+    list-style: none;
+    font-size: 17px; }
+  .contenedorMainEquipo .imgSocios {
+    height: 400px;
+    box-shadow: 5px 5px 10px 0px  #ffff; }
+  .contenedorMainEquipo .ulListaSocios {
+    padding: 0; }
+  .contenedorMainEquipo .subTituloContadores {
+    color: #a18b62; }
+  .contenedorMainEquipo .parrafoSocios {
+    font-size: 19px;
+    padding-bottom: 40px; }
 
 @media only screen and (max-width: 960px) {
   .imgSocios {
@@ -332,133 +326,119 @@ main {
   .parrafoSocios {
     font-size: 17px;
     padding-bottom: 10px; }
-  .listaContactoSocios {
-    list-style: none;
-    font-size: 15px; }
   .ulListaSocios {
-    padding: 0; } }
+    padding: 0; }
+    .ulListaSocios .listaContactoSocios {
+      list-style: none;
+      font-size: 15px; } }
 
-/* SEPARAR EN EL OTRO ARCHIVO SCSS LO QUE CORRESPONDE A LOS LLAMADOS */
-/* Trabajá con nosotros */
-/* Trabajá con nosotros - Introducción */
-#contenedorIntoduccionTrabaja {
-  height: 35vh;
-  background-color: #051923;
-  color: #ffff;
-  text-align: center; }
-
-.estiloTituloTrabaja {
-  font-size: 50px;
-  font-weight: bold;
-  position: relative;
-  top: 50%; }
-
-/* Trabajá con nosotros - LLamados */
-#contenedorLLamados {
-  background-color: #590004;
-  height: 100vh;
-  position: relative; }
-
-#imgLlamados {
-  height: 320px;
-  position: relative;
-  top: 30px;
-  left: 50px; }
-
-#estiloTituloLLamadosAbiertos {
-  font-size: 34px;
-  display: inline-block;
-  position: relative;
-  top: 15px;
-  left: 80px;
-  font-weight: bold;
-  color: #ffff; }
-
-/* Trabajá con nosotros - Por qué trabajar en V & A */
-#contenedorCulturaOrganizacion {
-  height: 40vh;
-  background-color: #7a3e43;
-  color: #ffff; }
-
-#contenedorHijoCulturaOrganizacion {
-  height: 70%;
-  width: 60%;
-  background-color: #55262a;
-  color: #ffff;
-  position: relative;
-  left: 20%;
-  top: 16%; }
-
-#contenedorHijoCulturaOrganizacion h2 {
-  text-align: center;
-  font-weight: bold;
-  font-size: 25px;
-  padding-top: 10px; }
-
-#contenedorHijoCulturaOrganizacion p {
-  margin-left: 10px;
-  margin-right: 10px; }
+/* Portada - Intro */
+#contenedorIntroduccionWork {
+  min-height: 95vh;
+  background-color: #0f0f0f;
+  display: flex;
+  flex-direction: row;
+  color: white; }
+  #contenedorIntroduccionWork #bgImgWork {
+    background-image: url(../img/jovenes_trabajando.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center; }
+  #contenedorIntroduccionWork #contTextoIntroWork {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px; }
+  #contenedorIntroduccionWork hr {
+    margin-top: 0px; }
 
 /* Llamados */
+.contenedorMainWork {
+  min-height: 100vh;
+  background-color: #181818;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  .contenedorMainWork .pCardsLlamados {
+    color: #a18b62; }
+
+/*
 #contenedorPadreLlamadosAbiertos {
-  height: 70vh;
-  background-color: #1d5064; }
+    height: 70vh;
+    background-color: #1d5064;
+}
 
 #contenedorHijoLLamadosAbiertos {
-  height: 70vh;
-  background-color: #c2b8b2;
-  width: 70%;
-  color: black; }
+    height: 70vh;
+    background-color: #c2b8b2;
+    width: 70%;
+    color: black;
+}
 
 #contenedorHijoLLamadosAbiertos h2 {
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 30px;
-  margin-left: 20px;
-  padding-top: 20px; }
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    padding-top: 20px;
+}
 
 #contenedorHijoLLamadosAbiertos h3 u {
-  font-size: 22px;
-  font-weight: bold; }
+    font-size: 22px;
+    font-weight: bold;
+}
 
 #contenedorHijoLLamadosAbiertos h3 {
-  font-size: 22px;
-  font-weight: bold;
-  margin-bottom: 5px;
-  margin-left: 20px; }
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
 
 .estiloParrafoLlamado {
-  margin-left: 20px;
-  margin-bottom: 20px; }
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
 
 #contenedorPrincipalFormularioLLamados {
-  background-color: #250001;
-  position: relative; }
+    background-color: #250001;
+    position: relative;
+}
 
 #contenedorPrincipalFormularioLLamados h3 {
-  color: #ffff;
-  font-size: 30px;
-  margin-bottom: 30px;
-  margin-left: 20px;
-  padding-top: 20px; }
+    color: #ffff;
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    padding-top: 20px;
+}
 
 #contenedorEspecificoFormulario {
-  height: 70vh;
-  width: 50%; }
+    height: 70vh;
+    width: 50%;
+}
 
 .itemsFormularioLlamados {
-  display: inline-block;
-  background-color: #e7dcd5;
-  color: black;
-  margin-left: 20px;
-  margin-top: 20px; }
+    display: inline-block;
+    background-color: #e7dcd5;
+    color: black;
+    margin-left: 20px;
+    margin-top: 20px;
+}
 
 #imagenFormularioLlamados {
-  position: absolute;
-  top: 12%;
-  right: 8%;
-  border: 2px solid #ffff; }
+    position: absolute;
+    top: 12%;
+    right: 8%;
+    border: 2px solid #ffff;
+}
 
+*/
 #contenedorPrincipalContacto h2 {
   font-size: 50px;
   font-weight: bold;

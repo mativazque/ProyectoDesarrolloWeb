@@ -19,11 +19,10 @@
 
 /* Lista de servicios */
 
-.contenedorPadreMainServicios {
+.contenedorMainServ {
+    @include contenedorMain (#181818);
     display: flex;
     flex-direction: column;
-    background-color: #181818;
-    color: #ffff;
 
     @media only screen and (max-width: 600px) {
         #contenedorPadreGrillaServ {

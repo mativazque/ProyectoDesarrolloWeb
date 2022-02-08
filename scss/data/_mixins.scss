@@ -1,9 +1,9 @@
 
 /* Intro con Portada */
 
-@mixin contenedorIntroduccion($bgColor) {
+@mixin contenedorIntroduccion($bgColorPortada) {
     min-height: $hight-main-intro;
-    background-color: $bgColor;
+    background-color: $bgColorPortada;
     display: flex;
     flex-direction: row;
     color: white;
@@ -25,5 +25,10 @@
     padding-left: $pLeft;
     padding-right: $pRight;
     
+}
+
+@mixin contenedorMain ($bgColorMain){
+    min-height: 100vh;
+    background-color: $bgColorMain;
 }
 
