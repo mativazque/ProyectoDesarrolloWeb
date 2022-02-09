@@ -1,0 +1,107 @@
+/* Detalle del llamado con portada */
+
+#contenedorIntroduccionWork {
+    @include contenedorIntroduccion(#111111);
+
+    #bgImgLlamados {
+        @include bgImg(url(../img/llamados.png));
+    }
+
+    hr {
+        margin-top: $mt-subrayado-titulo;
+    }
+
+    .uSubTitLlamados {
+        color: rgb(161, 139, 98);
+    }
+
+    @media only screen and (max-width: 960px) {
+        .subTitulosLlamados {
+            margin-left: 5px;
+            margin-right: 5px;
+            color: rgb(161, 139, 98);
+            margin-bottom: 5px;
+        }
+
+        .parrafosLlamados {
+            margin-left: 5px;
+            margin-right: 5px;
+            font-size: 15px;
+        }
+
+        .listRequisitosLlamados {
+            font-size: 15px;
+        }
+
+        .contAnclaPostulacion {
+            text-align: center;
+            font-size: 17px;
+            font-weight: bold;
+            padding-top: 20px;
+            padding-bottom: 50px;
+        }
+    }
+
+    @media only screen and (min-width: 960px) {
+        .parrafosLlamados {
+            margin-left: 20px;
+            margin-right: 20px;
+            font-size: 17px;
+        }
+
+        .subTitulosLlamados {
+            margin-left: 20px;
+            margin-right: 20px;
+            color: rgb(161, 139, 98);
+            margin-bottom: 5px;
+        }
+
+        .listRequisitosLlamados {
+            font-size: 17px;
+        }
+
+        .contAnclaPostulacion {
+            text-align: center;
+            font-size: 19px;
+            font-weight: bold;
+            color: rgb(161, 139, 98);
+            padding-bottom: 70px;
+        }
+    }
+}
+
+/*
+#contenedorPrincipalFormularioLLamados {
+    background-color: #250001;
+    position: relative;
+}
+
+#contenedorPrincipalFormularioLLamados h3 {
+    color: #ffff;
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+#contenedorEspecificoFormulario {
+    height: 70vh;
+    width: 50%;
+}
+
+.itemsFormularioLlamados {
+    display: inline-block;
+    background-color: #e7dcd5;
+    color: black;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#imagenFormularioLlamados {
+    position: absolute;
+    top: 12%;
+    right: 8%;
+    border: 2px solid #ffff;
+}
+
+*/

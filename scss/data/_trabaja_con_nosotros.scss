@@ -18,7 +18,7 @@
 }
 
 
-/* Llamados */
+/* Llamados abiertos*/
 
 .contenedorMainWork {
     @include contenedorMain (#181818);
@@ -31,91 +31,8 @@
     .pCardsLlamados{
         color: rgb(161, 139, 98);
     }
-
-
-
-
-
-
-
-
-
 }
 
 
 
-
-
-/*
-#contenedorPadreLlamadosAbiertos {
-    height: 70vh;
-    background-color: #1d5064;
-}
-
-#contenedorHijoLLamadosAbiertos {
-    height: 70vh;
-    background-color: #c2b8b2;
-    width: 70%;
-    color: black;
-}
-
-#contenedorHijoLLamadosAbiertos h2 {
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 30px;
-    margin-left: 20px;
-    padding-top: 20px;
-}
-
-#contenedorHijoLLamadosAbiertos h3 u {
-    font-size: 22px;
-    font-weight: bold;
-}
-
-#contenedorHijoLLamadosAbiertos h3 {
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 5px;
-    margin-left: 20px;
-}
-
-.estiloParrafoLlamado {
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-#contenedorPrincipalFormularioLLamados {
-    background-color: #250001;
-    position: relative;
-}
-
-#contenedorPrincipalFormularioLLamados h3 {
-    color: #ffff;
-    font-size: 30px;
-    margin-bottom: 30px;
-    margin-left: 20px;
-    padding-top: 20px;
-}
-
-#contenedorEspecificoFormulario {
-    height: 70vh;
-    width: 50%;
-}
-
-.itemsFormularioLlamados {
-    display: inline-block;
-    background-color: #e7dcd5;
-    color: black;
-    margin-left: 20px;
-    margin-top: 20px;
-}
-
-#imagenFormularioLlamados {
-    position: absolute;
-    top: 12%;
-    right: 8%;
-    border: 2px solid #ffff;
-}
-
-*/
 

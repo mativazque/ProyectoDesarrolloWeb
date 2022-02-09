@@ -3,7 +3,7 @@
 #contenedorPortadaIndex {
 
     @include bgImg (url(../img/fondoIndex.png)); 
-    min-height: $hight-main-intro;
+    min-height: 95vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
