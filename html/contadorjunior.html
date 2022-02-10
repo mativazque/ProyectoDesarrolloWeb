@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="contador público, cr., contador junior, llamado laboral, oferta laboral, postulación">
-    <meta name="description" content="Oferta laboral para contadores públicos recientemente recibidos con al menos dos años de experiencia.">
-    <title>Llamado Cr.</title>
+    <meta name="keywords"
+        content="estudiantes, ccee, ciencias económicas, llamado laboral, oferta laboral, postulación">
+    <meta name="description"
+        content="Oferta laboral para estudianes de contador público que estén cursando segundo o tercer año de carrera.">
+    <title>Llamado estudiante</title>
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,6 +22,7 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/48c451096e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body>
@@ -57,59 +60,91 @@
         </nav>
     </header>
 
-
-
     <main>
-        <div>
-            <div id="contenedorPadreLlamadosAbiertos">
-                <div id="contenedorHijoLLamadosAbiertos">
-                    <h2>LLamado Contador Público Junior</h2>
-                    <!--Inicio descripción del llamado-->
-                    <h3><u>Posición</u></h3>
-                    <p class="estiloParrafoLlamado">Contador Junior</p>
-                    <h3><u>Descripción de funciones</u></h3>
-                    <p class="estiloParrafoLlamado">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
-                        consectetur assumenda rerum,
-                        provident odio voluptates obcaecati et quis hic in incidunt, rem expedita ut! Voluptas dolor
-                        recusandae tempore ea expedita?</p>
-                    <h3><u>Requisitos</u></h3>
-                    <p class="estiloParrafoLlamado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-                        nemo inventore quasi libero,
-                        amet corporis est numquam omnis tempora dolores delectus minus ipsum exercitationem
-                        reprehenderit
-                        dolorem voluptatum ab eos magnam!</p>
-                    <h3><u>Perfil</u></h3>
-                    <p class="estiloParrafoLlamado">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Consectetur, unde facilis iste nihil
-                        tenetur quaerat corporis aperiam exercitationem eum optio porro odit dolorum voluptatibus
-                        quos, ad quam debitis quod temporibus?</p>
+        <!--Detalle del llamado con Portada-->
+        <div id="contenedorIntroduccionWork">
+            <div class="container-fluid">
+                <div class="row" style="height: 100%;">
+                    <div class="col-12 col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 order-lg-2 order-xl-2 order-xxl-2"
+                        id="bgImgLlamados">
+                    </div>
+                    <div
+                        class="col-12 col-xxl-8 col-xl-8 col-lg-8 col-md-12 col-sm-12 order-lg-1 order-xl-1 order-xxl-1 d-flex flex-column justify-content-between">
+
+                        <div>
+                            <h2 class="text-center mt-5">LLamado Cr. Público Junior</h2>
+                            <hr>
+                        </div>
+
+
+                        <div>
+                            <u class="uSubTitLlamados">
+                                <h6 class="subTitulosLlamados">Posición</h6>
+                            </u>
+                            <p class="parrafosLlamados">Contador Junior</p>
+
+                            <u class="uSubTitLlamados">
+                                <h6 class="subTitulosLlamados">Requisitos</h6>
+                            </u>
+                            <ul>
+                                <li class="listRequisitosLlamados">Egresado</li>
+                                <li class="listRequisitosLlamados">Experiencia de al menos 2 años en estudios contables o consultoras</li>
+                                <li class="listRequisitosLlamados">Buen manejo de paquete office (se valorará conocimientos de SAP)</li>
+                                <li class="listRequisitosLlamados">Buen nivel de inglés en habla y escritura</li>
+                            </ul>
+
+                            <u class="uSubTitLlamados">
+                                <h6 class="subTitulosLlamados">Descripción de funciones</h6>
+                            </u>
+                            <p class="parrafosLlamados">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
+                                consectetur assumenda rerum,
+                                provident odio voluptates obcaecati et quis hic in incidunt, rem expedita ut! Voluptas
+                                dolor
+                                recusandae tempore ea expedita?</p>
+
+                            <u class="uSubTitLlamados">
+                                <h6 class="subTitulosLlamados">Perfil</h6>
+                            </u>
+                            <p class="parrafosLlamados">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Consectetur, unde facilis iste nihil
+                                tenetur quaerat corporis aperiam exercitationem eum optio porro odit dolorum
+                                voluptatibus
+                                quos, ad quam debitis quod temporibus?</p>
+                        </div>
+
+                        <div class="contAnclaPostulacion animate__animated animate__pulse animate__infinite">
+                            <a href="#anclaLlamadoCr" class="anclas">
+                                Postúlate
+                            </a>
+                        </div>
+
+                    </div>
                 </div>
-            </div>
-            <div id="contenedorPrincipalFormularioLLamados">
-                <h3>Formulario de postulación</h3>
-                <!--Inicio formulario de postulación-->
-                <div id="contenedorEspecificoFormulario">
-                    <form action="">
-                        <input type="text" placeholder="Nombre y apellido" required class="itemsFormularioLlamados">
-                        <input type="number" placeholder="Edad" required class="itemsFormularioLlamados">
-                        <input type="email" placeholder="E-mail" required class="itemsFormularioLlamados">
-                        <input type="text" placeholder="Celular" class="itemsFormularioLlamados">
-                        <input type="text" placeholder="Aspiración salarial $ UYU" required
-                            class="itemsFormularioLlamados"><br>
-                        <textarea name="" id="" cols="74" rows="8"
-                            placeholder="¿Por qué quiere postularse a este llamado?" required
-                            class="itemsFormularioLlamados"></textarea><br>
-                        <label class="itemsFormularioLlamados">Adjuntar escolaridad</label>
-                        <input type="file" required class="itemsFormularioLlamados"><br>
-                        <label class="itemsFormularioLlamados">Adjuntar CV</label>
-                        <input type="file" required class="itemsFormularioLlamados"><br>
-                        <input type="submit" value="Enviar postulación" class="itemsFormularioLlamados">
-                    </form>
-                </div>
-                <!--Fin formulario de postulación-->
-                <img src="../img/jovenestrabajando.jpg" alt="equipo de trabajo" id="imagenFormularioLlamados">
             </div>
         </div>
+
+        <!--Formulario de postulación-->
+        <div class="contenedorMainLlamados" id="anclaLlamadoCr">
+            <div>
+                <h3 class="text-center mt-3">Formulario de postulación</h3>
+                <hr class="subrayadoTitFormularioLlamado">
+            </div>
+            <form action="" class="formularioLlamado">
+                <input type="text" placeholder="Nombre y apellido" required class="imputFormularioLlamado">
+                <input type="number" placeholder="Edad" required class="imputFormularioLlamado">
+                <input type="email" placeholder="E-mail" required class="imputFormularioLlamado">
+                <input type="text" placeholder="Celular" class="imputFormularioLlamado">
+                <input type="text" placeholder="Aspiración salarial $ UYU" required class="imputFormularioLlamado">
+                <textarea name="" id="" cols="" rows="" placeholder="¿Por qué quiere postularse a este llamado?"
+                    required class="imputFormularioLlamadoText"></textarea>
+                <div class="contInputFile">
+                    <label class="">Adjuntar CV</label>
+                    <input type="file" required class="inputFile">
+                </div>
+                <input type="submit" value="Enviar" class="inputSubmit">
+            </form>
+        </div>
+
     </main>
 
     <footer class="bg-black pt-3 pb-3">
@@ -120,7 +155,8 @@
                     <hr class="mb-2 mt-0 mx-auto" style="width: 120px; height: 2px; color: #ffff;">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link p-0 estiloListasFooter" href="../index.html" style="color: #737373;">Quienes
+                            <a class="nav-link p-0 estiloListasFooter" href="../index.html"
+                                style="color: #737373;">Quienes
                                 somos</a>
                         </li>
                         <li class="nav-item">

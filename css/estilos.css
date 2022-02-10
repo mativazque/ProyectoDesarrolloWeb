@@ -421,41 +421,135 @@ main {
       color: #a18b62;
       padding-bottom: 70px; } }
 
-/*
-#contenedorPrincipalFormularioLLamados {
-    background-color: #250001;
-    position: relative;
-}
+/* Formulario de postulación */
+.contenedorMainLlamados {
+  min-height: 100vh;
+  background-color: #1d1c1c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; }
+  .contenedorMainLlamados .subrayadoTitFormularioLlamado {
+    margin: 0; }
+  @media only screen and (max-width: 600px) {
+    .contenedorMainLlamados .formularioLlamado {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80%; }
+      .contenedorMainLlamados .formularioLlamado .imputFormularioLlamado {
+        background-color: #111111;
+        color: #ffff;
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 17px;
+        display: block;
+        border: groove 4px #a18b62;
+        height: 30px;
+        width: 100%;
+        margin-top: 10px; }
+      .contenedorMainLlamados .formularioLlamado .imputFormularioLlamadoText {
+        background-color: #111111;
+        color: #ffff;
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 17px;
+        display: block;
+        border: groove 3px #a18b62;
+        height: 90px;
+        width: 100%;
+        margin-top: 10px; }
+      .contenedorMainLlamados .formularioLlamado .contInputFile {
+        background-color: #111111;
+        color: #ffff;
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 17px;
+        display: flex;
+        flex-direction: column;
+        border: groove 3px #a18b62;
+        width: 100%;
+        margin-top: 10px; }
+        .contenedorMainLlamados .formularioLlamado .contInputFile .inputFile {
+          font-size: 12px;
+          font-family: "Roboto Condensed", sans-serif; }
+      .contenedorMainLlamados .formularioLlamado .inputSubmit {
+        background-color: #ffff;
+        color: #755c2c;
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 17px;
+        font-weight: bold;
+        display: block;
+        border-radius: 4px;
+        height: 30px;
+        width: 60%;
+        margin-top: 30px;
+        margin-bottom: 30px; }
+      .contenedorMainLlamados .formularioLlamado .inputSubmit:hover {
+        background-color: #111111;
+        color: #a18b62;
+        box-shadow: 0px 0px 10px 0px #a18b62; }
+      .contenedorMainLlamados .formularioLlamado ::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #d1d1d1;
+        opacity: 1;
+        /* Firefox */ }
+      .contenedorMainLlamados .formularioLlamado :focus::-webkit-input-placeholder {
+        color: transparent; } }
+  @media only screen and (min-width: 600px) {
+    .contenedorMainLlamados .formularioLlamado {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 474px; }
+      .contenedorMainLlamados .formularioLlamado .imputFormularioLlamado {
+        background-color: #111111;
+        color: #ffff;
+        font-family: "Roboto Condensed", sans-serif;
+        display: block;
+        border: groove 3px #a18b62;
+        height: 35px;
+        width: 100%;
+        margin-top: 15px; }
+      .contenedorMainLlamados .formularioLlamado .imputFormularioLlamadoText {
+        background-color: #111111;
+        color: #ffff;
+        font-family: "Roboto Condensed", sans-serif;
+        display: block;
+        border: groove 3px #a18b62;
+        height: 100px;
+        width: 100%;
+        margin-top: 15px; }
+      .contenedorMainLlamados .formularioLlamado .contInputFile {
+        background-color: #111111;
+        color: #ffff;
+        font-family: "Roboto Condensed", sans-serif;
+        display: flex;
+        flex-direction: column;
+        border: groove 3px #a18b62;
+        width: 100%;
+        margin-top: 15px; }
+        .contenedorMainLlamados .formularioLlamado .contInputFile .inputFile {
+          font-size: 15px;
+          font-family: "Roboto Condensed", sans-serif; }
+      .contenedorMainLlamados .formularioLlamado .inputSubmit {
+        background-color: #ffff;
+        color: #755c2c;
+        font-family: "Roboto Condensed", sans-serif;
+        font-weight: bold;
+        display: block;
+        border-radius: 5px;
+        height: 35px;
+        width: 70%;
+        margin-top: 40px;
+        margin-bottom: 40px; }
+      .contenedorMainLlamados .formularioLlamado .inputSubmit:hover {
+        background-color: #111111;
+        color: #a18b62;
+        box-shadow: 0px 0px 10px 0px #a18b62; }
+      .contenedorMainLlamados .formularioLlamado ::placeholder {
+        color: #d1d1d1;
+        opacity: 1; }
+      .contenedorMainLlamados .formularioLlamado :focus::-webkit-input-placeholder {
+        color: transparent; } }
 
-#contenedorPrincipalFormularioLLamados h3 {
-    color: #ffff;
-    font-size: 30px;
-    margin-bottom: 30px;
-    margin-left: 20px;
-    padding-top: 20px;
-}
-
-#contenedorEspecificoFormulario {
-    height: 70vh;
-    width: 50%;
-}
-
-.itemsFormularioLlamados {
-    display: inline-block;
-    background-color: #e7dcd5;
-    color: black;
-    margin-left: 20px;
-    margin-top: 20px;
-}
-
-#imagenFormularioLlamados {
-    position: absolute;
-    top: 12%;
-    right: 8%;
-    border: 2px solid #ffff;
-}
-
-*/
 #contenedorPrincipalContacto h2 {
   font-size: 50px;
   font-weight: bold;
