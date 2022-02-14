@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="contacto, contactar, mensaje, formulario, datos, ubicación, mail, teléfono">
-    <meta name="description" content="Contáctate con nosotros enviándonos un mensaje mediante el formulario adjunto, mail, llamándonos, o concurriendo a nuestras oficinas."">
+    <meta name="description"
+        content="Contáctate con nosotros enviándonos un mensaje mediante el formulario adjunto, mail, llamándonos, o concurriendo a nuestras oficinas."">
     <title>Contacto</title>
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel=" stylesheet" href="../css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -58,38 +59,67 @@
     </header>
 
     <main>
-        <div id="contenedorPrincipalContacto">
-            <!--Formulario-->
-            <h2>Contáctanos</h2>
-            <section id="contenedorHijoContacto">
-                <form action="">
-                    <label for="nombre usuario" class="estiloLabelFormulario">Nombre</label>
-                    <input type="text" placeholder="Ingrese su nombre" id="nombre usuario" required
-                        class="estiloCamposFormulario">
-                    <label for="email usuario" class="estiloLabelFormulario">E-mail</label>
-                    <input type="email" placeholder="Ingrese su e-mail" id="email usuario" required
-                        class="estiloCamposFormulario">
-                    <label for="telefono usuario" class="estiloLabelFormulario">Celular o teléfono.</label>
-                    <input type="tel" placeholder="Ingrese su celular o tel." id="telefono usuario" required
-                        class="estiloCamposFormulario">
-                    <label for="mensaje usuario" class="estiloLabelFormulario">Mensaje</label>
-                    <textarea name="" id="mensaje usuario" cols="70" rows="10" placeholder="Ingrese su mensaje" required
-                        class="estiloCamposFormulario"></textarea>
-                    <input type="submit" value="Enviar mensaje" class="btn btn-dark">
-                </form>
-            </section>
-            <!--Otros datos-->
-            <section id="sectionOtrosDatosContacto">
-                <h3>Montevideo, Uruguay</h3>
-                <ul>
-                    <li>
-                        <a href="https://goo.gl/maps/gPaJxeURBxaBjGfw9">C. Coronel Brandzen 2007</a>
-                    </li>
-                    <li>mail (Aún no creado)</li>
-                    <li>cel (Aún sin definir)</li>
-                </ul>
-            </section>
-            <img src="../img/edificio.jpg" alt="Edificio" id="imgContacto">
+        <div class="contenedorMainContacto">
+
+
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-xxl-6 col-xl-6 col-lg-6 col-md-10 col-sm-12 d-flex flex-column mb-5">
+                        <div>
+                            <h2 class="mt-4 ms-2 me-2 text-center">Contáctanos</h2>
+                            <hr class="subrayadoTitContacto">
+                        </div>
+
+                        <h6 class="ms-2 me-2 mt-0 mb-4">Envíenos un mensaje sobre cualquier interés que tenga, nos
+                            estaremos comunicando con usted lo antes posible.</h6>
+
+                        <form class="mb-2 ms-2 me-2">
+                            <div class="mb-2">
+                                <label for="nombre_usuario" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" placeholder="Nombre Apellido" required>
+                            </div>
+                            <div class="mb-2">
+                                <label for="email_usuario" class="form-label">e-mail</label>
+                                <input type="email" class="form-control" placeholder="ejemplo@ejemplo.com" required>
+                            </div>
+                            <div class="mb-2">
+                                <label for="cel_usuario" class="form-label">Celular</label>
+                                <input type="text" class="form-control" placeholder="+598 xx xx xx xx" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensaje_usuario" class="form-label">Mensaje</label>
+                                <textarea class="form-control" placeholder="Escriba su consulta" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-secondary">Enviar</button>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div
+                        class="col-12 col-xxl-6 col-xl-6 col-lg-6 col-md-10 col-sm-12 d-flex flex-column align-items-center">
+                        <h4 class="ms-2 me-2 mb-3">Nuestra Oficina - Montevideo, Uy</h4>
+                        <img src="../img/oficina.png" alt="oficina" class="imgOficina">
+                        <ul style="padding: 0;">
+                            <li class="estiloListasFooter">
+                                <i class="fas fa-map-marker-alt text-white fa-1x iconsContactoFooter"></i>
+                                Coronel
+                                Brandzen 2007, Montevideo, Uy
+                            </li>
+                            <li class="estiloListasFooter">
+                                <i class="fas fa-envelope text-white fa-1x iconsContactoFooter"></i>
+                                matiasvaz95@gmail.com
+                            </li>
+                            <li class="estiloListasFooter">
+                                <i class="fas fa-phone text-white fa-1x iconsContactoFooter"></i>
+                                +598 98 36 00 17
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
         </div>
     </main>
 
@@ -101,7 +131,8 @@
                     <hr class="mb-2 mt-0 mx-auto" style="width: 120px; height: 2px; color: #ffff;">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link p-0 estiloListasFooter" href="../index.html" style="color: #737373;">Quienes
+                            <a class="nav-link p-0 estiloListasFooter" href="../index.html"
+                                style="color: #737373;">Quienes
                                 somos</a>
                         </li>
                         <li class="nav-item">
