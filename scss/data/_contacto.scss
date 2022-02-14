@@ -11,6 +11,12 @@
         margin-bottom: 40px;
     }
 
+    .estiloListaContacto {
+        list-style: $list-style;
+        text-decoration: none;
+    }
+    
+
     @media only screen and (max-width: 250px) {
         .imgOficina {
             width: 200px;
