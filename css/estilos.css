@@ -82,13 +82,25 @@ main {
     background-size: cover;
     background-position-x: center;
     background-position-y: center; }
-  #contenedorIntroduccionServicios #contTextoIntroServ {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
-    padding-left: 50px;
-    padding-right: 50px; }
+  @media only screen and (max-width: 320px) {
+    #contenedorIntroduccionServicios #contTextoIntroServ {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      padding-left: 10px;
+      padding-right: 10px; }
+    #contenedorIntroduccionServicios .parrIntro {
+      font-size: 17px; } }
+  @media only screen and (min-width: 320px) {
+    #contenedorIntroduccionServicios #contTextoIntroServ {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 17px; } }
   #contenedorIntroduccionServicios hr {
     margin-top: 0px; }
 
@@ -120,7 +132,7 @@ main {
           justify-content: space-around;
           padding-left: 20px;
           padding-right: 20px;
-          box-shadow: 0px 0px 10px 0px  #ffff; }
+          box-shadow: 0px 0px 10px 0px #ffff; }
         .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_ii {
           grid-area: a2; }
         .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_iii {
@@ -162,7 +174,7 @@ main {
           justify-content: space-around;
           padding-left: 20px;
           padding-right: 20px;
-          box-shadow: 0px 0px 10px 0px  #ffff; }
+          box-shadow: 0px 0px 10px 0px #ffff; }
         .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_ii {
           grid-area: a2;
           background-color: #111111;
@@ -171,7 +183,7 @@ main {
           justify-content: space-around;
           padding-left: 20px;
           padding-right: 20px;
-          box-shadow: 0px 0px 10px 0px  #ffff; }
+          box-shadow: 0px 0px 10px 0px #ffff; }
         .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_iii {
           grid-area: a3;
           background-color: #111111;
@@ -180,7 +192,7 @@ main {
           justify-content: space-around;
           padding-left: 20px;
           padding-right: 20px;
-          box-shadow: 0px 0px 10px 0px  #ffff; }
+          box-shadow: 0px 0px 10px 0px #ffff; }
         .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_iv {
           grid-area: a4;
           background-color: #111111;
@@ -189,7 +201,7 @@ main {
           justify-content: space-around;
           padding-left: 20px;
           padding-right: 20px;
-          box-shadow: 0px 0px 10px 0px  #ffff; }
+          box-shadow: 0px 0px 10px 0px #ffff; }
         .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ .parrafosListServ {
           font-size: 17px;
           display: block;
@@ -229,7 +241,7 @@ main {
           justify-content: space-around;
           padding-left: 20px;
           padding-right: 20px;
-          box-shadow: 0px 0px 10px 0px  #ffff; }
+          box-shadow: 0px 0px 10px 0px #ffff; }
         .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_ii {
           grid-area: a2;
           background-color: #111111;
@@ -238,7 +250,7 @@ main {
           justify-content: space-around;
           padding-left: 20px;
           padding-right: 20px;
-          box-shadow: 0px 0px 10px 0px  #ffff; }
+          box-shadow: 0px 0px 10px 0px #ffff; }
         .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_iii {
           grid-area: a3;
           background-color: #111111;
@@ -247,7 +259,7 @@ main {
           justify-content: space-around;
           padding-left: 20px;
           padding-right: 20px;
-          box-shadow: 0px 0px 10px 0px  #ffff; }
+          box-shadow: 0px 0px 10px 0px #ffff; }
         .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ #servicio_iv {
           grid-area: a4;
           background-color: #111111;
@@ -256,7 +268,7 @@ main {
           justify-content: space-around;
           padding-left: 20px;
           padding-right: 20px;
-          box-shadow: 0px 0px 10px 0px  #ffff; }
+          box-shadow: 0px 0px 10px 0px #ffff; }
         .contenedorMainServ #contenedorPadreGrillaServ #contenedorHijoGrillaServ .parrafosListServ {
           font-size: 19px;
           display: block;
@@ -384,6 +396,9 @@ main {
     margin-top: 0px; }
   #contenedorIntroduccionWork .uSubTitLlamados {
     color: #a18b62; }
+  #contenedorIntroduccionWork .divRelleno {
+    height: 160px;
+    width: 100%; }
   @media only screen and (max-width: 960px) {
     #contenedorIntroduccionWork .subTitulosLlamados {
       margin-left: 5px;
