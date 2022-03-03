@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +13,7 @@ main {
 
 /*Introducción con Portada*/
 
-.estiloTítulo_1{
+.estiloTítulo_1 {
     margin-top: 5%;
 }
 
@@ -31,7 +30,13 @@ main {
     padding-bottom: 2%;
 }
 
+/*Anclas Grl*/
+
 .anclas {
     text-decoration: none;
     color: #ffff;
+}
+
+.anclas:hover {
+    color: rgb(161, 139, 98);
 }

@@ -1,8 +1,7 @@
 /* Portada */
 
 #contenedorPortadaIndex {
-
-    @include bgImg (url(../img/fondoIndex.png)); 
+    @include bgImg(url(../img/fondoIndex.png));
     min-height: 95vh;
     display: flex;
     flex-direction: column;
@@ -27,12 +26,11 @@
 /* Sobre Nosotros */
 
 .contenedorMainIndex {
-    @include contenedorMain (#051923);
+    @include contenedorMain(#051923);
     padding-top: 50px;
     padding-bottom: 50px;
     display: flex;
     color: #ffff;
-
 
     hr {
         margin-top: $mt-subrayado-titulo;

@@ -25,11 +25,14 @@ main {
   padding-top: 15%;
   padding-bottom: 2%; }
 
+/*Anclas Grl*/
 .anclas {
   text-decoration: none;
   color: #ffff; }
 
-/* Intro con Portada */
+.anclas:hover {
+  color: #a18b62; }
+
 /* Portada */
 #contenedorPortadaIndex {
   background-image: url(../img/fondoIndex.png);
@@ -332,7 +335,7 @@ main {
     font-size: 17px; }
   .contenedorMainEquipo .imgSocios {
     height: 400px;
-    box-shadow: 5px 5px 10px 0px  #ffff; }
+    box-shadow: 5px 5px 10px 0px #ffff; }
   .contenedorMainEquipo .ulListaSocios {
     padding: 0; }
   .contenedorMainEquipo .subTituloContadores {
@@ -344,7 +347,7 @@ main {
 @media only screen and (max-width: 960px) {
   .imgSocios {
     height: 360px;
-    box-shadow: 5px 5px 10px 0px  #ffff; }
+    box-shadow: 5px 5px 10px 0px #ffff; }
   .parrafoSocios {
     font-size: 17px;
     padding-bottom: 10px; }

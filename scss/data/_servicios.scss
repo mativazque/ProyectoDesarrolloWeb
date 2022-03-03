@@ -12,7 +12,7 @@
             @include contTextoIntro(10px, 10px);
         }
 
-        .parrIntro{
+        .parrIntro {
             font-size: $fz-parr-intro;
         }
     }
@@ -22,7 +22,7 @@
             @include contTextoIntro(50px, 50px);
         }
     }
-    
+
     hr {
         margin-top: $mt-subrayado-titulo;
     }

@@ -1,9 +1,8 @@
-
 /* Portada-Intro */
 
 #contenedorIntroduccionEquipo {
     @include contenedorIntroduccion(#110606);
-   
+
     #bgImgEquipo {
         @include bgImg(url(../img/portada_equipo.png));
     }
@@ -13,7 +12,7 @@
             @include contTextoIntro(10px, 10px);
         }
 
-        .parrIntro{
+        .parrIntro {
             font-size: $fz-parr-intro;
         }
     }
@@ -31,58 +30,52 @@
 
 /* Socios */
 
-.contenedorMainEquipo{
-    @include contenedorMain (#111111);
+.contenedorMainEquipo {
+    @include contenedorMain(#111111);
     padding-top: 100px;
     padding-bottom: 100px;
 
-    .listaContactoSocios{
+    .listaContactoSocios {
         list-style: $list-style;
         font-size: 17px;
     }
-    
-    .imgSocios{
+
+    .imgSocios {
         height: 400px;
-        box-shadow: 5px 5px 10px 0px  #ffff;
+        box-shadow: 5px 5px 10px 0px #ffff;
     }
-    
-    .ulListaSocios{
+
+    .ulListaSocios {
         padding: 0;
     }
-    
-    .subTituloContadores{
-        color:rgb(161, 139, 98);
+
+    .subTituloContadores {
+        color: rgb(161, 139, 98);
     }
-    
-    .parrafoSocios{
+
+    .parrafoSocios {
         font-size: 19px;
         padding-bottom: 40px;
     }
-
 }
 
-
-
 @media only screen and (max-width: 960px) {
-
-    .imgSocios{
+    .imgSocios {
         height: 360px;
-        box-shadow: 5px 5px 10px 0px  #ffff;
+        box-shadow: 5px 5px 10px 0px #ffff;
     }
-    
-    .parrafoSocios{
+
+    .parrafoSocios {
         font-size: 17px;
         padding-bottom: 10px;
-    } 
+    }
 
-    .ulListaSocios{
+    .ulListaSocios {
         padding: 0;
 
-        .listaContactoSocios{
+        .listaContactoSocios {
             list-style: $list-style;
             font-size: 15px;
         }
     }
-
 }
-

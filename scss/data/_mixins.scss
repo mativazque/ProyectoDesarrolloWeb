@@ -1,6 +1,4 @@
 
-/* Intro con Portada */
-
 @mixin contenedorIntroduccion($bgColorPortada) {
     min-height: $hight-main-intro;
     background-color: $bgColorPortada;
@@ -9,13 +7,12 @@
     color: white;
 }
 
-@mixin bgImg($urlBgImg){
+@mixin bgImg($urlBgImg) {
     background-image: $urlBgImg;
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
     background-position-y: center;
-    
 }
 
 @mixin contTextoIntro($pLeft, $pRight) {
@@ -25,11 +22,9 @@
     justify-content: center;
     padding-left: $pLeft;
     padding-right: $pRight;
-    
 }
 
-@mixin contenedorMain ($bgColorMain){
+@mixin contenedorMain($bgColorMain) {
     min-height: 100vh;
     background-color: $bgColorMain;
 }
-
