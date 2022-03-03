@@ -8,8 +8,20 @@
         @include bgImg(url(../img/portada_equipo.png));
     }
 
-    #contTextoIntroEquipo {
-        @include contTextoIntro(50px, 50px);
+    @media only screen and (max-width: 600px) {
+        #contTextoIntroEquipo {
+            @include contTextoIntro(10px, 10px);
+        }
+
+        .parrIntro{
+            font-size: $fz-parr-intro;
+        }
+    }
+
+    @media only screen and (min-width: 600px) {
+        #contTextoIntroEquipo {
+            @include contTextoIntro(50px, 50px);
+        }
     }
 
     hr {

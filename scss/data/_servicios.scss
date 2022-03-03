@@ -7,20 +7,19 @@
         @include bgImg(url(../img/portada_serviciosII.png));
     }
 
-    @media only screen and (max-width: 320px) {
+    @media only screen and (max-width: 600px) {
         #contTextoIntroServ {
             @include contTextoIntro(10px, 10px);
         }
 
         .parrIntro{
-            font-size: 17px;
+            font-size: $fz-parr-intro;
         }
     }
 
-    @media only screen and (min-width: 320px) {
+    @media only screen and (min-width: 600px) {
         #contTextoIntroServ {
-            @include contTextoIntro(10px, 10px);
-            font-size: 17px;
+            @include contTextoIntro(50px, 50px);
         }
     }
     
